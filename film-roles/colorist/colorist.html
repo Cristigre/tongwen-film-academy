@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<!https://hhnmrezq.gensparkspace.com>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Role of a Colorist: Essential Guide for Beginner Filmmakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+        .before-after:hover .after-overlay {
+            opacity: 0;
+        }
+        .after-overlay {
+            transition: opacity 0.5s ease;
+        }
+        .color-palette {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .warm { background-color: #ff6b35; }
+        .cool { background-color: #4ecdc4; }
+        .neutral { background-color: #95a5a6; }
+        .dramatic { background-color: #2c3e50; }
+        .vibrant { background: linear-gradient(45deg, #ff6b35, #f7931e); }
+        
+        @media print {
+            body { font-size: 12px; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">The Role of a Colorist</h1>
+            <p class="text-xl mb-8">Essential Guide for Beginner Filmmakers</p>
+            <div class="flex justify-center items-center space-x-4">
+                <i class="fas fa-film text-3xl"></i>
+                <i class="fas fa-palette text-3xl"></i>
+                <i class="fas fa-magic text-3xl"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">What is a Colorist?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-6">
+                            A <strong>Colorist</strong> is a post-production specialist who transforms raw footage into visually stunning, emotionally engaging content. They're the artists who give films their distinctive "look" and ensure every shot tells the story through color.
+                        </p>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                            <h3 class="text-xl font-semibold mb-4 text-blue-800">Key Responsibilities:</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Color correction for technical accuracy</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Creative color grading for mood and tone</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Matching shots for visual continuity</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Creating signature looks and styles</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Collaborating with directors and cinematographers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="https://blog.frame.io/wp-content/uploads/2019/07/diy_color_suite_03.jpg" 
+                             alt="Professional colorist working in a grading suite" 
+                             class="rounded-lg shadow-lg w-full">
+                        <p class="text-sm text-gray-500 mt-2 text-center">A professional colorist at work in a modern grading suite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Correction vs Color Grading -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Color Correction vs. Color Grading</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-tools text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Color Correction</h3>
+                        <p class="text-gray-600">Technical Foundation</p>
+                    </div>
+                    
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-cog text-blue-500 mr-3 mt-1"></i>
+                            <span>Fixes technical issues (exposure, white balance)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cog text-blue-500 mr-3 mt-1"></i>
+                            <span>Achieves natural, realistic colors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cog text-blue-500 mr-3 mt-1"></i>
+                            <span>Ensures consistency across shots</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cog text-blue-500 mr-3 mt-1"></i>
+                            <span>Done first, before creative grading</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-palette text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Color Grading</h3>
+                        <p class="text-gray-600">Creative Enhancement</p>
+                    </div>
+                    
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-magic text-purple-500 mr-3 mt-1"></i>
+                            <span>Creates mood and atmosphere</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-magic text-purple-500 mr-3 mt-1"></i>
+                            <span>Establishes visual style and tone</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-magic text-purple-500 mr-3 mt-1"></i>
+                            <span>Enhances storytelling through color</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-magic text-purple-500 mr-3 mt-1"></i>
+                            <span>Applied after color correction</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Visual Comparison -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Visual Comparison</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <img src="https://s.studiobinder.com/wp-content/uploads/2019/01/What-is-Color-Correction-Color-Grading-Color-Correcting-Guide-Header-StudioBinder.jpg" 
+                             alt="Before color correction and grading" 
+                             class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="font-semibold text-gray-800">Raw Footage</h4>
+                        <p class="text-sm text-gray-600">Direct from camera, unprocessed</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://www.proglobalbusinesssolutions.com/wp-content/uploads/2023/07/color-grading-color-correction-difference.webp" 
+                             alt="After color correction" 
+                             class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="font-semibold text-gray-800">Color Corrected</h4>
+                        <p class="text-sm text-gray-600">Technical issues fixed, natural colors</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://www.proglobalbusinesssolutions.com/wp-content/uploads/2023/07/color-grading-before-after.webp" 
+                             alt="After color grading" 
+                             class="rounded-lg shadow-md w-full mb-4">
+                        <h4 class="font-semibold text-gray-800">Color Graded</h4>
+                        <p class="text-sm text-gray-600">Creative look applied, cinematic mood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotional Impact of Color -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">How Color Affects Emotions</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <p class="text-lg text-center text-gray-700 mb-12">
+                    Color grading is one of the most powerful storytelling tools in filmmaking. Here's how different color palettes evoke specific emotions:
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-orange-50 p-6 rounded-lg text-center card-hover">
+                        <div class="color-palette warm mx-auto mb-4"></div>
+                        <h3 class="text-xl font-semibold mb-2 text-orange-800">Warm Tones</h3>
+                        <p class="text-gray-700">Comfort, happiness, energy, passion</p>
+                    </div>
+                    
+                    <div class="bg-teal-50 p-6 rounded-lg text-center card-hover">
+                        <div class="color-palette cool mx-auto mb-4"></div>
+                        <h3 class="text-xl font-semibold mb-2 text-teal-800">Cool Tones</h3>
+                        <p class="text-gray-700">Calm, mystery, technology, isolation</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-hover">
+                        <div class="color-palette neutral mx-auto mb-4"></div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Desaturated</h3>
+                        <p class="text-gray-700">Realism, drama, bleakness, authenticity</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg text-center card-hover">
+                        <div class="color-palette vibrant mx-auto mb-4"></div>
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">High Contrast</h3>
+                        <p class="text-gray-700">Tension, action, fantasy, stylization</p>
+                    </div>
+                </div>
+                
+                <!-- Popular Color Schemes -->
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Popular Cinematic Color Schemes</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <img src="https://retouchinglabs.com/wp-content/uploads/2024/03/orange-and-teal-lut-retouchinglabs.jpg" 
+                                 alt="Teal and Orange color scheme example" 
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="text-xl font-semibold mb-2">Teal & Orange</h4>
+                            <p class="text-gray-700">The most popular modern color scheme, creating high contrast and visual appeal. Used in action films and blockbusters.</p>
+                        </div>
+                        
+                        <div>
+                            <img src="https://localeyesit.com/wp-content/uploads/2025/05/Colour-Theory-1024x521.jpg" 
+                                 alt="Various color grading examples" 
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="text-xl font-semibold mb-2">Monochromatic</h4>
+                            <p class="text-gray-700">Single color dominance creates mood unity. Often used in thrillers and dramas for emotional consistency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools of the Trade -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Tools of the Trade: Software and Equipment</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Software Section -->
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-desktop mr-3 text-blue-500"></i>
+                        Professional Software
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">DaVinci Resolve</h4>
+                            <p class="text-gray-600">Industry standard, free version available</p>
+                        </div>
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">Avid Media Composer</h4>
+                            <p class="text-gray-600">Professional editing and color suite</p>
+                        </div>
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-2">Adobe Premiere Pro</h4>
+                            <p class="text-gray-600">Lumetri Color panel for beginners</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hardware Section -->
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-tv mr-3 text-green-500"></i>
+                        Professional Hardware Setup
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <img src="https://massive.io/wp-content/uploads/2023/11/Affordable-colour-grading-monitors-2020.webp" 
+                                 alt="Professional color grading monitors" 
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="text-lg font-semibold mb-2">Calibrated Monitors</h4>
+                            <p class="text-gray-700">Essential for accurate color representation. Professional colorists use reference monitors calibrated to industry standards.</p>
+                        </div>
+                        
+                        <div>
+                            <img src="https://r.tourboxtech.com/file/202311/color-wheels-in-davinci-resolve.jpg" 
+                                 alt="DaVinci Resolve color wheels interface" 
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="text-lg font-semibold mb-2">Control Surfaces</h4>
+                            <p class="text-gray-700">Physical control panels with trackballs and knobs for precise color adjustments and faster workflow.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Workspace Setup -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-cogs mr-3 text-purple-500"></i>
+                        Professional Grading Suite
+                    </h3>
+                    
+                    <img src="https://images.mixinglight.com/cb:sOVj.5c7e3/w:857/h:420/q:mauto/f:best/ig:avif/https://mixinglight.com/wp-content/uploads/2015/08/Anatomy-Of-A-Grading-Suite-Design-ML0364.jpg" 
+                         alt="Anatomy of a professional color grading suite" 
+                         class="rounded-lg shadow-md w-full mb-6">
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-lg font-semibold mb-3">Essential Components:</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Controlled lighting environment</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Multiple calibrated monitors</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Professional control panels</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>High-performance workstation</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold mb-3">Beginner Setup:</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center"><i class="fas fa-laptop text-blue-500 mr-2"></i>Powerful computer with good GPU</li>
+                                <li class="flex items-center"><i class="fas fa-desktop text-blue-500 mr-2"></i>IPS monitor (properly calibrated)</li>
+                                <li class="flex items-center"><i class="fas fa-download text-blue-500 mr-2"></i>DaVinci Resolve (free version)</li>
+                                <li class="flex items-center"><i class="fas fa-lightbulb text-blue-500 mr-2"></i>Consistent room lighting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Professional Tutorials and Workflows</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <p class="text-lg text-center text-gray-700 mb-12">
+                    Learn from industry professionals with these carefully selected tutorials covering real-world color grading workflows.
+                </p>
+                
+                <!-- Featured Videos Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Video 1: Professional Workflow -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/FnBSg6YOFNY/hq720.jpg" 
+                                 alt="DaVinci Resolve cinematic color grading tutorial"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=FnBSg6YOFNY" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Cinematic Color Grading Workflow</h3>
+                        <p class="text-gray-600 text-sm mb-3">Step-by-step professional workflow in DaVinci Resolve</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>8:24 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>162K views
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2: Professional Colorist Interview -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/dxL7tclBlnY/hq720.jpg" 
+                                 alt="Professional colorist masterclass"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=dxL7tclBlnY" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">UK Broadcast PRO Colorist</h3>
+                        <p class="text-gray-600 text-sm mb-3">Professional colorist grades a commercial from start to finish</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>13:37 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>324K views
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3: Beginner Tutorial -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/YbDRl_xugJo/hq720.jpg" 
+                                 alt="DaVinci Resolve for beginners"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=YbDRl_xugJo" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">NEW to DaVinci Resolve?</h3>
+                        <p class="text-gray-600 text-sm mb-3">Perfect starting point for absolute beginners</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>13:23 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>348K views
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4: Hollywood Professional -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/O0JSI3m_iys/hqdefault.jpg" 
+                                 alt="Hollywood colorist Chris Jacobson"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=O0JSI3m_iys" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Hollywood Colorist at Work</h3>
+                        <p class="text-gray-600 text-sm mb-3">Chris Jacobson grades the TV show "Suits"</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>1:23 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>85K views
+                        </div>
+                    </div>
+                    
+                    <!-- Video 5: Career Insights -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/ZgYI8tlPEGA/hq720.jpg" 
+                                 alt="What does a colorist do"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=ZgYI8tlPEGA" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">What Does a Colorist Do?</h3>
+                        <p class="text-gray-600 text-sm mb-3">Overview of the colorist process and workflow</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>1:50 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>6.4K views
+                        </div>
+                    </div>
+                    
+                    <!-- Video 6: Emotional Impact -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="relative mb-4">
+                            <img src="https://i.ytimg.com/vi/K0Q5nfo2eeU/hq720.jpg" 
+                                 alt="What is color grading"
+                                 class="w-full rounded-lg">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <a href="https://www.youtube.com/watch?v=K0Q5nfo2eeU" 
+                                   target="_blank"
+                                   class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube mr-2"></i>Watch Tutorial
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">What is Color Grading?</h3>
+                        <p class="text-gray-600 text-sm mb-3">Understanding color grading and storytelling</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-clock mr-1"></i>1:41 | 
+                            <i class="fas fa-eye ml-2 mr-1"></i>221K views
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Learning Resources -->
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-blue-800">Additional Learning Resources</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-lg font-semibold mb-3 flex items-center">
+                                <i class="fas fa-book text-blue-500 mr-2"></i>
+                                Recommended Learning Path
+                            </h4>
+                            <ol class="space-y-2 text-gray-700">
+                                <li>1. Start with "What is Color Grading?" basics</li>
+                                <li>2. Learn DaVinci Resolve interface and tools</li>
+                                <li>3. Practice color correction fundamentals</li>
+                                <li>4. Study professional workflows and techniques</li>
+                                <li>5. Analyze film color schemes and moods</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold mb-3 flex items-center">
+                                <i class="fas fa-link text-blue-500 mr-2"></i>
+                                Professional Resources
+                            </h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• MixingLight.com - Professional training</li>
+                                <li>• Lowepost - Industry insights and tutorials</li>
+                                <li>• Frame.io - Post-production workflows</li>
+                                <li>• DaVinci Resolve official training</li>
+                                <li>• Color grading forums and communities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Worksheet -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Interactive Learning Worksheet</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Color Mood Exercise -->
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-palette mr-3 text-purple-500"></i>
+                        Exercise 1: Identify Emotional Tones
+                    </h3>
+                    
+                    <p class="text-gray-700 mb-6">
+                        Study the color graded images below and identify the emotional tone each conveys. This exercise helps develop your eye for color psychology in film.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="text-center">
+                            <img src="https://www.canonoutsideofauto.ca/wp-content/uploads/2025/01/emotional-color-comparison.jpg" 
+                                 alt="Emotional color comparison examples"
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="font-semibold text-lg mb-2">Warm vs. Cool Comparison</h4>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-sm text-gray-700 mb-2"><strong>Left (Warm):</strong> Conveys comfort, intimacy, happiness</p>
+                                <p class="text-sm text-gray-700"><strong>Right (Cool):</strong> Suggests isolation, technology, mystery</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <img src="https://i.ytimg.com/vi/W-GjJky4AuQ/maxresdefault.jpg" 
+                                 alt="Teal and orange variations"
+                                 class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="font-semibold text-lg mb-2">Teal & Orange Variations</h4>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-sm text-gray-700 mb-2"><strong>Subtle:</strong> Natural, commercial appeal</p>
+                                <p class="text-sm text-gray-700"><strong>Dramatic:</strong> Action, high-energy, stylized</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Questions -->
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-800">Practice Questions:</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-medium mb-2">1. What emotion would a heavily desaturated, low-contrast grade convey?</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'correct')">Realism/Drama</button>
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'incorrect')">Joy/Celebration</button>
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'incorrect')">Fantasy/Magic</button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p class="font-medium mb-2">2. Which color temperature is typically used for flashback scenes?</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'incorrect')">Very Cool (Blue)</button>
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'correct')">Warm (Golden)</button>
+                                    <button class="px-3 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100 transition" onclick="selectAnswer(this, 'incorrect')">Neutral White</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shot Matching Exercise -->
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-adjust mr-3 text-green-500"></i>
+                        Exercise 2: Understanding Shot Continuity
+                    </h3>
+                    
+                    <p class="text-gray-700 mb-6">
+                        One of the colorist's key responsibilities is maintaining visual continuity between shots. Here's what to look for:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4">Matching Checklist:</h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-3">
+                                    <span>Skin tone consistency across shots</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-3">
+                                    <span>White balance uniformity</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-3">
+                                    <span>Exposure and contrast levels</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-3">
+                                    <span>Color temperature consistency</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-3">
+                                    <span>Saturation and vibrancy levels</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold mb-4">Common Continuity Issues:</h4>
+                            <div class="space-y-2 text-gray-700">
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2 mt-1"></i>
+                                    <span>Different lighting conditions between takes</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2 mt-1"></i>
+                                    <span>Camera settings changed mid-scene</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2 mt-1"></i>
+                                    <span>Time of day changes affecting color temperature</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2 mt-1"></i>
+                                    <span>Different locations with varying ambient light</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Color Palette Creator -->
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-swatchbook mr-3 text-orange-500"></i>
+                        Exercise 3: Create Your Color Palette
+                    </h3>
+                    
+                    <p class="text-gray-700 mb-6">
+                        Design a color palette for different film genres. Consider the emotional impact and storytelling needs.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-semibold text-center mb-4">Romantic Comedy</h4>
+                            <div class="space-y-2">
+                                <div class="h-8 bg-pink-200 rounded flex items-center justify-center text-xs">Soft Pink</div>
+                                <div class="h-8 bg-yellow-200 rounded flex items-center justify-center text-xs">Warm Yellow</div>
+                                <div class="h-8 bg-orange-200 rounded flex items-center justify-center text-xs">Peach</div>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2 text-center">Warm, inviting, optimistic</p>
+                        </div>
+                        
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-semibold text-center mb-4">Sci-Fi Thriller</h4>
+                            <div class="space-y-2">
+                                <div class="h-8 bg-blue-600 rounded flex items-center justify-center text-xs text-white">Deep Blue</div>
+                                <div class="h-8 bg-teal-500 rounded flex items-center justify-center text-xs text-white">Cyan</div>
+                                <div class="h-8 bg-gray-700 rounded flex items-center justify-center text-xs text-white">Steel Gray</div>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2 text-center">Cold, technological, mysterious</p>
+                        </div>
+                        
+                        <div class="border border-gray-200 p-4 rounded-lg">
+                            <h4 class="font-semibold text-center mb-4">Historical Drama</h4>
+                            <div class="space-y-2">
+                                <div class="h-8 bg-yellow-600 rounded flex items-center justify-center text-xs text-white">Golden Brown</div>
+                                <div class="h-8 bg-red-800 rounded flex items-center justify-center text-xs text-white">Deep Red</div>
+                                <div class="h-8 bg-gray-500 rounded flex items-center justify-center text-xs text-white">Muted Gray</div>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2 text-center">Earthy, authentic, timeless</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Downloadable Resources -->
+                <div class="bg-gradient-to-r from-purple-500 to-blue-600 text-white p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Downloadable Resources</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-download text-4xl mb-4"></i>
+                            <h4 class="text-lg font-semibold mb-2">Color Grading Checklist</h4>
+                            <p class="text-sm mb-4">Essential steps for every color grading session</p>
+                            <button class="bg-white text-purple-600 px-4 py-2 rounded hover:bg-gray-100 transition" onclick="downloadResource('checklist')">
+                                Download PDF
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-palette text-4xl mb-4"></i>
+                            <h4 class="text-lg font-semibold mb-2">Genre Color Guide</h4>
+                            <p class="text-sm mb-4">Color palettes for different film genres</p>
+                            <button class="bg-white text-purple-600 px-4 py-2 rounded hover:bg-gray-100 transition" onclick="downloadResource('color-guide')">
+                                Download PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Path Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Your Path to Becoming a Colorist</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-300"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
+                        <h3 class="text-xl font-semibold mb-2">Learn the Fundamentals</h3>
+                        <p class="text-gray-700 mb-3">Master color theory, understand camera formats, and learn the difference between correction and grading.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Color Theory</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Camera Basics</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Post-Production Workflow</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                        <h3 class="text-xl font-semibold mb-2">Master the Software</h3>
+                        <p class="text-gray-700 mb-3">Start with DaVinci Resolve (free version) and learn professional workflows and techniques.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">DaVinci Resolve</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Avid Media Composer</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Control Surfaces</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                        <h3 class="text-xl font-semibold mb-2">Build Your Portfolio</h3>
+                        <p class="text-gray-700 mb-3">Work on personal projects, collaborate with filmmakers, and create a diverse showreel.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Personal Projects</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Collaborations</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Demo Reel</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">4</div>
+                        <h3 class="text-xl font-semibold mb-2">Network and Specialize</h3>
+                        <p class="text-gray-700 mb-3">Connect with industry professionals, find your niche, and continuously improve your skills.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">Industry Events</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">Online Communities</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">Specialization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Career Options -->
+                <div class="bg-gray-50 p-8 rounded-lg mt-8">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">Career Opportunities</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-film text-3xl text-blue-500 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Film & TV</h4>
+                            <p class="text-sm text-gray-600">Movies, series, documentaries, streaming content</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-video text-3xl text-green-500 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Commercial</h4>
+                            <p class="text-sm text-gray-600">Advertising, corporate videos, brand content</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-gamepad text-3xl text-purple-500 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Digital Media</h4>
+                            <p class="text-sm text-gray-600">Gaming, VR/AR, social media content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Continue Your Color Grading Journey</h3>
+                <p class="text-gray-300 mb-6">
+                    Remember, becoming a skilled colorist takes time and practice. Start with the basics, experiment with different looks, and always keep learning from professionals in the field.
+                </p>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <div class="text-center">
+                        <i class="fas fa-eye text-2xl text-blue-400 mb-2"></i>
+                        <p class="text-sm">Study Films</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-hands-helping text-2xl text-green-400 mb-2"></i>
+                        <p class="text-sm">Practice Daily</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-users text-2xl text-purple-400 mb-2"></i>
+                        <p class="text-sm">Join Communities</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-graduation-cap text-2xl text-orange-400 mb-2"></i>
+                        <p class="text-sm">Never Stop Learning</p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        Educational resource for beginner filmmakers • Created with industry insights and professional workflows
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive answer selection
+        function selectAnswer(button, result) {
+            // Reset all buttons in the same question
+            const siblings = button.parentElement.children;
+            for (let sibling of siblings) {
+                sibling.classList.remove('bg-green-100', 'bg-red-100', 'border-green-500', 'border-red-500');
+                sibling.classList.add('bg-white', 'border-gray-300');
+            }
+            
+            // Style the selected button
+            if (result === 'correct') {
+                button.classList.remove('bg-white', 'border-gray-300');
+                button.classList.add('bg-green-100', 'border-green-500');
+            } else {
+                button.classList.remove('bg-white', 'border-gray-300');
+                button.classList.add('bg-red-100', 'border-red-500');
+            }
+        }
+        
+        // Download resource function
+        function downloadResource(type) {
+            if (type === 'checklist') {
+                // Create a simple checklist PDF content
+                const content = `
+                    COLOR GRADING CHECKLIST
+                    
+                    PRE-GRADING PREPARATION:
+                    □ Organize project files and media
+                    □ Check monitor calibration
+                    □ Review client brief and references
+                    □ Set up proper viewing environment
+                    
+                    COLOR CORRECTION PHASE:
+                    □ Fix exposure issues
+                    □ Correct white balance
+                    □ Match shots for continuity
+                    □ Adjust contrast and saturation
+                    
+                    CREATIVE GRADING PHASE:
+                    □ Apply creative look/style
+                    □ Enhance mood and atmosphere
+                    □ Create visual hierarchy
+                    □ Check skin tones
+                    
+                    FINAL REVIEW:
+                    □ Review on calibrated monitor
+                    □ Check for consistency
+                    □ Export test renders
+                    □ Client approval process
+                `;
+                downloadTextAsFile(content, 'color-grading-checklist.txt');
+            } else if (type === 'color-guide') {
+                const content = `
+                    GENRE COLOR GUIDE
+                    
+                    ROMANTIC COMEDY:
+                    - Warm tones (pink, peach, golden)
+                    - High saturation
+                    - Soft contrast
+                    - Bright, optimistic feel
+                    
+                    SCI-FI THRILLER:
+                    - Cool tones (blue, teal, cyan)
+                    - High contrast
+                    - Desaturated skin tones
+                    - Technological, sterile feel
+                    
+                    HISTORICAL DRAMA:
+                    - Warm, muted tones
+                    - Film-like color reproduction
+                    - Natural skin tones
+                    - Authentic, timeless feel
+                    
+                    HORROR:
+                    - Desaturated colors
+                    - Green/blue undertones
+                    - High contrast shadows
+                    - Unsettling, ominous mood
+                    
+                    ACTION:
+                    - Teal and orange
+                    - High saturation
+                    - Strong contrasts
+                    - Dynamic, energetic feel
+                `;
+                downloadTextAsFile(content, 'genre-color-guide.txt');
+            }
+        }
+        
+        function downloadTextAsFile(text, filename) {
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add hover effects to video thumbnails
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<!https://drdwhuvn.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lighting Technician: Illuminating Film's Visual Language</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            height: 1px;
+            margin: 3rem 0;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .safety-alert {
+            border-left: 4px solid #ef4444;
+            background: linear-gradient(90deg, #fef2f2, #ffffff);
+        }
+        .hierarchy-chart {
+            height: 400px;
+        }
+        .checklist-item {
+            transition: all 0.2s ease;
+        }
+        .checklist-item:hover {
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <i class="fas fa-lightbulb text-6xl mb-6 text-yellow-300"></i>
+                <h1 class="text-5xl font-bold mb-4">The Lighting Technician</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Master craftspeople who transform film sets through precision, creativity, and technical expertise. 
+                    More than just "light movers" – they are crucial team members shaping cinema's visual language.
+                </p>
+                <div class="flex justify-center space-x-6 text-sm">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-tools mr-2"></i>Technical Skills
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-shield-alt mr-2"></i>Safety First
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-users mr-2"></i>Team Collaboration
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">What Does a Lighting Technician Do?</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Lighting Technicians (also known as Set Electricians or "Sparks") are the skilled professionals responsible for 
+                        rigging, positioning, and maintaining all lighting equipment on film sets. They work under the guidance of the 
+                        Gaffer to bring the Director of Photography's vision to life.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-bolt text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Rigging & Setup</h4>
+                                <p class="text-gray-600 text-sm">Installing and positioning lights, managing power distribution</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-ethernet text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Cable Management</h4>
+                                <p class="text-gray-600 text-sm">Running cables safely and efficiently throughout the set</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-adjust text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Light Adjustment</h4>
+                                <p class="text-gray-600 text-sm">Fine-tuning fixtures, hanging gels, adjusting flags and diffusion</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-hard-hat text-blue-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Safety Maintenance</h4>
+                                <p class="text-gray-600 text-sm">Ensuring all equipment meets safety standards and protocols</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://c8.alamy.com/comp/2GCF9G5/behind-the-scene-filmmaking-lighting-technician-electric-engineer-adjusting-and-setup-lights-for-movie-film-scene-light-department-film-crew-2GCF9G5.jpg" 
+                         alt="Lighting technician adjusting equipment" 
+                         class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="https://thumbs.dreamstime.com/b/behind-scene-filmmaking-lighting-technician-adjusting-setup-lights-electric-engineer-movie-film-light-department-crew-226617632.jpg" 
+                         alt="Technician working with lighting setup" 
+                         class="rounded-lg shadow-lg w-full h-48 object-cover">
+                    <img src="https://filmlocal.com/wp-content/uploads/2025/01/Film-Lights-1024x819.jpg" 
+                         alt="Professional film lighting equipment" 
+                         class="rounded-lg shadow-lg w-full h-48 object-cover col-span-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Team Collaboration Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Supporting the Gaffer and DP</h2>
+            
+            <!-- Hierarchy Chart -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">Film Lighting Department Hierarchy</h3>
+                <div class="hierarchy-chart">
+                    <canvas id="hierarchyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-video text-4xl text-purple-600 mb-3"></i>
+                        <h4 class="text-xl font-semibold text-gray-800">Director of Photography (DP)</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Creates the overall visual strategy and lighting design. Communicates the artistic vision 
+                        that technicians help bring to life through precise equipment placement and adjustment.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-crown text-4xl text-yellow-600 mb-3"></i>
+                        <h4 class="text-xl font-semibold text-gray-800">Gaffer</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Head of the electrical department who translates the DP's vision into technical reality. 
+                        Directly supervises lighting technicians and coordinates all electrical operations on set.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bolt text-4xl text-blue-600 mb-3"></i>
+                        <h4 class="text-xl font-semibold text-gray-800">Lighting Technician</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        The hands-on specialists who execute the lighting plan. They rig equipment, manage power, 
+                        make adjustments, and ensure every technical detail supports the creative vision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Video Resources Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Learn from Industry Professionals</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/mizzaeFTm3E" 
+                                title="How to Tell Story With Lighting | Gaffer Breakdown with Harold Skinner" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Storytelling Through Lighting</h4>
+                        <p class="text-gray-600 text-sm">Harold Skinner, who worked with Fincher and Nolan, breaks down professional lighting techniques.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VdcJHEUBwnE" 
+                                title="Film set EDC - Everyday Carry for Set Lighting Technicians" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Essential Tools for Technicians</h4>
+                        <p class="text-gray-600 text-sm">Learn what professional lighting technicians carry in their everyday toolkit on set.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/0EYszdbe180" 
+                                title="WHAT IS A LIGHTING TECHNICIAN AND WHAT IS THEIR ROLE ON SET?" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Role of Lighting Technicians</h4>
+                        <p class="text-gray-600 text-sm">Comprehensive overview of what lighting technicians do on professional film sets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Tools and Equipment Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lighting Tools and Rigging Techniques</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Essential Equipment</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-lightbulb text-yellow-500 text-xl mr-3"></i>
+                                <h4 class="font-semibold text-gray-800">Lighting Fixtures</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">Fresnel lights, LED panels, tungsten units, and specialty fixtures for various shooting conditions.</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-grip-vertical text-blue-500 text-xl mr-3"></i>
+                                <h4 class="font-semibold text-gray-800">Rigging Hardware</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">C-stands, baby stands, grip arms, clamps, and mounting accessories for secure light positioning.</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-palette text-purple-500 text-xl mr-3"></i>
+                                <h4 class="font-semibold text-gray-800">Light Modifiers</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">Gels, diffusion materials, flags, nets, and bounce boards to shape and control light quality.</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-6 shadow-md">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-plug text-green-500 text-xl mr-3"></i>
+                                <h4 class="font-semibold text-gray-800">Power & Distribution</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">Extension cables, distro boxes, dimmers, and power management systems for safe electricity distribution.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <img src="https://assets.videomaker.com/2021/01/xsGDY8oq-B20QlKpP-37078077_1686745251446923_8774370937345671168_o.jpg" 
+                         alt="Professional gaffer working with equipment" 
+                         class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    <img src="https://www.tikigripelectric.com/blog/admin/uploads/2022/stage-worker-sets-up-lights_tikigrip_1669604038.jpg" 
+                         alt="Stage worker setting up lights" 
+                         class="rounded-lg shadow-lg w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Rigging Techniques -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Basic Rigging Principles</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-anchor text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Secure Mounting</h4>
+                        <p class="text-gray-600 text-sm">Always ensure lights are properly secured with appropriate stands and safety cables to prevent accidents.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-route text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Cable Management</h4>
+                        <p class="text-gray-600 text-sm">Run cables along walls and tape them down to prevent tripping hazards and equipment damage.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-balance-scale text-green-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Weight Distribution</h4>
+                        <p class="text-gray-600 text-sm">Balance heavy fixtures properly and use sandbags or counterweights when necessary for stability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Safety Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Safety First on Set</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="safety-alert rounded-lg p-6 mb-8">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-exclamation-triangle text-red-500 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">Critical Safety Reminder</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Lighting technicians work with high-voltage electricity, heavy equipment, and work at heights. 
+                            Safety protocols are not optional – they save lives and prevent injuries.
+                        </p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Essential Safety Equipment</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-hard-hat text-yellow-600"></i>
+                            <span class="text-gray-700">Hard hat for overhead work</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-eye text-blue-600"></i>
+                            <span class="text-gray-700">Safety glasses/goggles</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-hand-paper text-green-600"></i>
+                            <span class="text-gray-700">Work gloves for handling equipment</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-shoe-prints text-brown-600"></i>
+                            <span class="text-gray-700">Steel-toed boots</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-life-ring text-red-600"></i>
+                            <span class="text-gray-700">Fall protection harness for height work</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://www.accuskills.com/sites/default/files/module_thumbnail/Lighting-Equipment-Safety---2024.jpg" 
+                         alt="Lighting equipment safety training" 
+                         class="rounded-lg shadow-lg w-full h-64 object-cover mb-6">
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Safety Protocols</h3>
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">1</div>
+                                <p class="text-gray-700 text-sm">Always turn off power before making electrical connections</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">2</div>
+                                <p class="text-gray-700 text-sm">Test equipment before each use and inspect for damage</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">3</div>
+                                <p class="text-gray-700 text-sm">Use proper lifting techniques for heavy equipment</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">4</div>
+                                <p class="text-gray-700 text-sm">Maintain clear communication during rigging operations</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mt-0.5">5</div>
+                                <p class="text-gray-700 text-sm">Keep fire extinguishers accessible and know their locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Interactive Worksheet Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Practice Your Skills</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Pre-Light Checklist -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">
+                        <i class="fas fa-clipboard-check text-green-600 mr-2"></i>
+                        Pre-Light Safety Checklist
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-sm">Use this checklist before beginning any lighting setup:</p>
+                    
+                    <div class="space-y-3">
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Power source identified and tested</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">All cables inspected for damage</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Stands and rigging hardware checked</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Safety equipment worn and ready</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Team communication established</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Fire safety equipment located</span>
+                        </label>
+                        <label class="checklist-item flex items-center p-3 rounded cursor-pointer">
+                            <input type="checkbox" class="mr-3 text-blue-600">
+                            <span class="text-gray-700 text-sm">Emergency procedures reviewed</span>
+                        </label>
+                    </div>
+                    
+                    <button onclick="printChecklist()" 
+                            class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-print mr-2"></i>Print Checklist
+                    </button>
+                </div>
+                
+                <!-- Lighting Scenario Exercise -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">
+                        <i class="fas fa-lightbulb text-yellow-600 mr-2"></i>
+                        Lighting Scenario Exercise
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-sm">Practice identifying lighting setups for different scenarios:</p>
+                    
+                    <div class="space-y-6">
+                        <div class="border rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Scenario 1: Interview Setup</h4>
+                            <p class="text-gray-600 text-sm mb-3">Single subject seated at a desk, natural window light available from camera left.</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario1" class="mr-2">
+                                    <span class="text-sm text-gray-700">Key light from window, fill light from camera right</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario1" class="mr-2">
+                                    <span class="text-sm text-gray-700">Single overhead light only</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario1" class="mr-2">
+                                    <span class="text-sm text-gray-700">Hard light directly from camera</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Scenario 2: Night Exterior</h4>
+                            <p class="text-gray-600 text-sm mb-3">Actor walking down a street at night, need to maintain naturalistic look.</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario2" class="mr-2">
+                                    <span class="text-sm text-gray-700">Bright white light following the actor</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario2" class="mr-2">
+                                    <span class="text-sm text-gray-700">Warm practical lights motivated by street lamps</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="scenario2" class="mr-2">
+                                    <span class="text-sm text-gray-700">No additional lighting needed</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="checkAnswers()" 
+                            class="mt-6 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                        <i class="fas fa-check mr-2"></i>Check Answers
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Resources Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Best Beginner Resources</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 rounded-lg p-6 text-center card-hover">
+                    <i class="fas fa-book text-3xl text-blue-600 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 mb-2">Training Programs</h4>
+                    <p class="text-gray-600 text-sm">Film schools and technical colleges offer hands-on lighting courses</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center card-hover">
+                    <i class="fas fa-users text-3xl text-green-600 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 mb-2">Industry Mentorship</h4>
+                    <p class="text-gray-600 text-sm">Connect with experienced technicians for on-the-job learning</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center card-hover">
+                    <i class="fas fa-certificate text-3xl text-purple-600 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 mb-2">Safety Certifications</h4>
+                    <p class="text-gray-600 text-sm">OSHA training and electrical safety certification programs</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 text-center card-hover">
+                    <i class="fas fa-handshake text-3xl text-orange-600 mb-4"></i>
+                    <h4 class="font-semibold text-gray-800 mb-2">Union Opportunities</h4>
+                    <p class="text-gray-600 text-sm">IATSE and other unions provide apprenticeship programs</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to Start Your Journey?</h3>
+                <p class="mb-6 max-w-2xl mx-auto">
+                    The path to becoming a skilled lighting technician combines technical knowledge, creative vision, 
+                    and dedication to safety. Every professional cinematographer started with learning the basics – 
+                    just like you're doing now.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                        <i class="fas fa-lightbulb mr-2"></i>Learn the Craft
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                        <i class="fas fa-shield-alt mr-2"></i>Master Safety
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                        <i class="fas fa-star mr-2"></i>Create Magic
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <i class="fas fa-film text-4xl text-yellow-400 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">The Art of Light</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Lighting technicians are the unsung heroes who transform ordinary spaces into extraordinary cinematic worlds. 
+                    Through precision, creativity, and unwavering attention to safety, they illuminate the stories that move us all.
+                </p>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Film Production Education. Empowering the next generation of filmmakers.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize hierarchy chart
+        const ctx = document.getElementById('hierarchyChart').getContext('2d');
+        const hierarchyChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Director', 'Director of Photography', 'Gaffer', 'Best Boy Electric', 'Lighting Technicians'],
+                datasets: [{
+                    data: [1, 1, 1, 1, 4],
+                    backgroundColor: [
+                        '#ef4444', // Red for Director
+                        '#8b5cf6', // Purple for DP
+                        '#f59e0b', // Yellow for Gaffer
+                        '#10b981', // Green for Best Boy
+                        '#3b82f6'  // Blue for Technicians
+                    ],
+                    borderWidth: 3,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            usePointStyle: true,
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const roles = [
+                                    'Overall creative vision and final approval',
+                                    'Visual storytelling and lighting design',
+                                    'Head of electrical department',
+                                    'Gaffer\'s assistant and crew coordinator',
+                                    'Equipment specialists and technicians'
+                                ];
+                                return roles[context.dataIndex];
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Print checklist function
+        function printChecklist() {
+            const checklist = document.querySelector('.bg-white.rounded-lg.shadow-lg.p-8');
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Pre-Light Safety Checklist</title>
+                        <style>
+                            body { font-family: Arial, sans-serif; padding: 20px; }
+                            h1 { color: #1f2937; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; }
+                            .checklist-item { margin: 10px 0; }
+                            input[type="checkbox"] { margin-right: 10px; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Pre-Light Safety Checklist</h1>
+                        <p>Use this checklist before beginning any lighting setup:</p>
+                        <div class="checklist-item"><input type="checkbox"> Power source identified and tested</div>
+                        <div class="checklist-item"><input type="checkbox"> All cables inspected for damage</div>
+                        <div class="checklist-item"><input type="checkbox"> Stands and rigging hardware checked</div>
+                        <div class="checklist-item"><input type="checkbox"> Safety equipment worn and ready</div>
+                        <div class="checklist-item"><input type="checkbox"> Team communication established</div>
+                        <div class="checklist-item"><input type="checkbox"> Fire safety equipment located</div>
+                        <div class="checklist-item"><input type="checkbox"> Emergency procedures reviewed</div>
+                        <p style="margin-top: 30px; font-style: italic;">Date: _______ Technician: _______________ Project: _______________</p>
+                    </body>
+                </html>
+            `);
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        // Check answers function
+        function checkAnswers() {
+            const scenario1 = document.querySelector('input[name="scenario1"]:checked');
+            const scenario2 = document.querySelector('input[name="scenario2"]:checked');
+            
+            let feedback = "Results:\n\n";
+            
+            if (scenario1) {
+                if (scenario1.nextElementSibling.textContent.includes('Key light from window')) {
+                    feedback += "Scenario 1: ✓ Correct! Using natural window light as key with fill creates professional results.\n";
+                } else {
+                    feedback += "Scenario 1: ✗ Consider using the natural window light as your key light source.\n";
+                }
+            } else {
+                feedback += "Scenario 1: Please select an answer.\n";
+            }
+            
+            if (scenario2) {
+                if (scenario2.nextElementSibling.textContent.includes('Warm practical lights')) {
+                    feedback += "Scenario 2: ✓ Correct! Motivated lighting maintains naturalistic appearance.\n";
+                } else {
+                    feedback += "Scenario 2: ✗ Consider lighting that appears motivated by existing street lamps.\n";
+                }
+            } else {
+                feedback += "Scenario 2: Please select an answer.\n";
+            }
+            
+            alert(feedback);
+        }
+
+        // Add smooth scrolling for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add interactive hover effects to cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

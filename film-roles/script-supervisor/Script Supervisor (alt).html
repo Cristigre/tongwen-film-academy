@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<!https://rrjijsyy.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Script Supervisor: Master of Film Continuity</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .image-annotation {
+            position: relative;
+        }
+        .annotation-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ef4444;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .annotation-popup {
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            max-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            display: none;
+        }
+        .annotation-dot:hover + .annotation-popup {
+            display: block;
+        }
+        .worksheet-section {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+        }
+        .continuity-error {
+            transition: all 0.3s ease;
+        }
+        .continuity-error:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        @media print {
+            .video-container {
+                height: 300px;
+                padding-bottom: 0;
+            }
+            .video-container iframe {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-4">The Script Supervisor</h1>
+                <p class="text-xl mb-2">Master of Film Continuity</p>
+                <p class="text-lg opacity-90">An Essential Guide for Beginner Filmmakers</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <i class="fas fa-clipboard-list text-2xl mb-2"></i>
+                        <p class="text-sm">Continuity Tracking</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <i class="fas fa-stopwatch text-2xl mb-2"></i>
+                        <p class="text-sm">Scene Timing</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <i class="fas fa-eye text-2xl mb-2"></i>
+                        <p class="text-sm">Visual Consistency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-gray-800">What Is a Script Supervisor?</h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            A Script Supervisor (also called Script Continuity Supervisor) is the film set's guardian of consistency. They ensure that every detail matches perfectly between shots, scenes, and takes.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                <span>Track continuity of costumes, props, and actor positions</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                <span>Time scenes and maintain script notes</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                <span>Communicate with director and editor</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                                <span>Create detailed reports for post-production</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-annotation">
+                        <img src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/35733/original.jpg" alt="Script Supervisor at Work" class="rounded-lg shadow-lg w-full">
+                        <div class="annotation-dot" style="top: 30%; left: 20%;"></div>
+                        <div class="annotation-popup" style="top: 25%; left: 22%;">
+                            <p class="text-sm"><strong>Script & Notes:</strong> Always has the marked-up script and continuity notes ready</p>
+                        </div>
+                        <div class="annotation-dot" style="top: 60%; left: 70%;"></div>
+                        <div class="annotation-popup" style="top: 55%; left: 72%;">
+                            <p class="text-sm"><strong>Stopwatch:</strong> Times each take to help with editing decisions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Does a Script Supervisor Do? -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">What Does a Script Supervisor Do?</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="video-container bg-black rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/NAvn7CNpdB8"
+                            title="What Happens When A Movie Has No Script Supervisor?"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-2xl font-semibold mb-4">The Importance of Script Supervision</h3>
+                        <p class="text-gray-600 mb-4">
+                            This Vanity Fair video featuring Martin Scorsese's script supervisor Martha Pinson perfectly demonstrates what happens when continuity breaks down. Watch how professional script supervisors catch and prevent these errors.
+                        </p>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                            <p class="text-sm text-yellow-800">
+                                <strong>Pro Tip:</strong> Notice how Martha demonstrates the systematic approach to tracking every visual element in a scene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-film text-3xl text-blue-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">Scene Coverage</h4>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Track which parts of the script are covered</li>
+                            <li>• Note camera angles and shot types</li>
+                            <li>• Ensure all needed coverage is captured</li>
+                            <li>• Communicate missing shots to director</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-tshirt text-3xl text-green-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">Costume & Props</h4>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Document wardrobe details</li>
+                            <li>• Note prop positions and conditions</li>
+                            <li>• Track makeup and hair continuity</li>
+                            <li>• Photograph reference shots</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-clock text-3xl text-purple-500 mb-3"></i>
+                            <h4 class="text-xl font-semibold">Timing & Reports</h4>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Time each take with stopwatch</li>
+                            <li>• Create daily editor's notes</li>
+                            <li>• Track screen time vs script pages</li>
+                            <li>• Prepare end-of-day reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Continuity Is Critical -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why Continuity Is Critical in Filmmaking</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto">
+                        Continuity errors can break the audience's immersion and make a film look unprofessional. Here are real examples of what can go wrong:
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="continuity-error bg-red-50 border border-red-200 rounded-lg p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-wine-glass text-2xl text-red-500"></i>
+                        </div>
+                        <h4 class="font-semibold text-center mb-2">Prop Continuity</h4>
+                        <p class="text-sm text-gray-600">Glass levels changing between cuts, food appearing/disappearing, objects moving positions</p>
+                    </div>
+                    
+                    <div class="continuity-error bg-orange-50 border border-orange-200 rounded-lg p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-tshirt text-2xl text-orange-500"></i>
+                        </div>
+                        <h4 class="font-semibold text-center mb-2">Wardrobe Errors</h4>
+                        <p class="text-sm text-gray-600">Ties switching sides, buttons done/undone, jacket on/off, wrinkles changing</p>
+                    </div>
+                    
+                    <div class="continuity-error bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-hand-paper text-2xl text-blue-500"></i>
+                        </div>
+                        <h4 class="font-semibold text-center mb-2">Actor Position</h4>
+                        <p class="text-sm text-gray-600">Hand positions, head turns, eye lines, sitting/standing inconsistencies</p>
+                    </div>
+                    
+                    <div class="continuity-error bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-sun text-2xl text-green-500"></i>
+                        </div>
+                        <h4 class="font-semibold text-center mb-2">Environmental</h4>
+                        <p class="text-sm text-gray-600">Lighting changes, weather inconsistencies, background elements moving</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold text-center mb-6">Famous Continuity Errors in Movies</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <img src="https://pbblogassets.s3.amazonaws.com/uploads/2016/07/Back-to-the-Future-1985-ima.jpg" alt="Back to the Future Continuity Error" class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="font-semibold mb-2">Back to the Future (1985)</h4>
+                            <p class="text-sm text-gray-600">The famous guitar continuity error where Marty's guitar changes between shots during the "Johnny B. Goode" performance.</p>
+                        </div>
+                        <div>
+                            <img src="https://laughingsquid.com/wp-content/uploads/2018/12/Martha-Pinson-Scene-Continuity-Vanity-Fair.jpg" alt="Martha Pinson demonstrating continuity" class="rounded-lg shadow-md w-full mb-4">
+                            <h4 class="font-semibold mb-2">Professional Analysis</h4>
+                            <p class="text-sm text-gray-600">Script supervisor Martha Pinson demonstrates how to spot and prevent continuity errors before they make it to the final cut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- On-Set Tools and Techniques -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">On-Set Tools and Techniques</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Essential Script Supervisor Tools</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-file-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Lined Script</h4>
+                                    <p class="text-sm text-gray-600">Color-coded lines showing which parts of the script are covered by each shot</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-green-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-stopwatch text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Digital Stopwatch</h4>
+                                    <p class="text-sm text-gray-600">Times each take to the tenth of a second for accurate post-production planning</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-purple-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-camera text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Digital Camera</h4>
+                                    <p class="text-sm text-gray-600">Takes reference photos of setups, costumes, and prop positions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-orange-100 p-2 rounded-lg mr-4">
+                                    <i class="fas fa-clipboard text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Continuity Forms</h4>
+                                    <p class="text-sm text-gray-600">Standardized forms for tracking script notes, facing pages, and daily reports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="https://infocusfilmschool.com/wp-content/uploads/2017/11/ssstopwatch.jpg" alt="Script Supervisor with Tools" class="rounded-lg shadow-lg w-full mb-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold mb-2">Script Supervisor's Kit</h4>
+                            <p class="text-sm text-gray-600">
+                                A typical script supervisor arrives on set with a carefully organized kit containing multiple colored pens, 
+                                stopwatches, continuity forms, and a digital camera. Every tool serves a specific purpose in maintaining 
+                                visual and narrative consistency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lined Script Tutorial -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">How to Create a Lined Script</h3>
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div class="video-container bg-black rounded-lg overflow-hidden">
+                            <iframe
+                                src="https://www.youtube.com/embed/n1HOiaikLJw"
+                                title="How To Make A Lined Script"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4">Lining Script Basics</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <div class="bg-red-500 w-4 h-1 mt-2 mr-3 rounded"></div>
+                                    <div>
+                                        <p class="font-medium">Red Lines</p>
+                                        <p class="text-sm text-gray-600">Master shots and wide shots</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-blue-500 w-4 h-1 mt-2 mr-3 rounded"></div>
+                                    <div>
+                                        <p class="font-medium">Blue Lines</p>
+                                        <p class="text-sm text-gray-600">Medium shots and two shots</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-green-500 w-4 h-1 mt-2 mr-3 rounded"></div>
+                                    <div>
+                                        <p class="font-medium">Green Lines</p>
+                                        <p class="text-sm text-gray-600">Close-ups and insert shots</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-purple-500 w-4 h-1 mt-2 mr-3 rounded"></div>
+                                    <div>
+                                        <p class="font-medium">Purple Lines</p>
+                                        <p class="text-sm text-gray-600">Special shots and pick-ups</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples of Continuity in Action -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Examples of Continuity in Action</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Real Script Supervisor Notes</h3>
+                        <div class="space-y-6">
+                            <img src="https://images.squarespace-cdn.com/content/v1/55aeab62e4b0485b4e8ab594/1530029132826-SMZ9OW9XEZVIM5SE3VNI/Script+Continuity+Sheet+Example.png" alt="Script Continuity Sheet Example" class="rounded-lg shadow-lg w-full">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">Continuity Sheet Breakdown</h4>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• <strong>Scene/Take Info:</strong> Scene number, take number, and setup details</li>
+                                    <li>• <strong>Action Notes:</strong> What happens in each shot</li>
+                                    <li>• <strong>Dialogue Tracking:</strong> Which lines are covered in each take</li>
+                                    <li>• <strong>Technical Notes:</strong> Camera moves, special actions, timing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Lined Script in Practice</h3>
+                        <img src="https://emahofilms.com/wp-content/uploads/2020/03/The-marked-up-script-example-1.jpg" alt="Lined Script Example" class="rounded-lg shadow-lg w-full mb-4">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Color-Coded Coverage</h4>
+                            <p class="text-sm text-gray-700 mb-3">
+                                This example shows how different colored lines indicate which parts of the script are covered by specific shots. 
+                                Each color represents a different camera setup or angle.
+                            </p>
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 bg-red-500 rounded mr-2"></div>
+                                    <span>Wide Shot</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 bg-blue-500 rounded mr-2"></div>
+                                    <span>Medium Shot</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 bg-green-500 rounded mr-2"></div>
+                                    <span>Close-up</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 bg-yellow-500 rounded mr-2"></div>
+                                    <span>Insert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Forms -->
+                <div class="bg-gray-100 rounded-lg p-8">
+                    <h3 class="text-2xl font-semibold text-center mb-8">Professional Script Supervisor Forms</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <img src="https://images.squarespace-cdn.com/content/v1/55aeab62e4b0485b4e8ab594/1530029020006-7SU1TJ3G2V7JPSHX9ZIP/Script+Continuity+Sheet+blank.png" alt="Blank Continuity Sheet" class="w-full rounded mb-3">
+                            <h4 class="font-semibold mb-2">Continuity Sheet</h4>
+                            <p class="text-sm text-gray-600">Standard form for tracking scene details, takes, and notes</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <img src="https://images.squarespace-cdn.com/content/v1/61e8a17cae68793e9fa20bb5/7ee6dba5-40f9-4415-b756-7d40b0441be9/Daily+shooting+log.png" alt="Daily Shooting Log" class="w-full rounded mb-3">
+                            <h4 class="font-semibold mb-2">Daily Shooting Log</h4>
+                            <p class="text-sm text-gray-600">End-of-day summary for production and post-production teams</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <img src="https://richardelson.tripod.com/contsheet.jpg" alt="Professional Script Notes" class="w-full rounded mb-3">
+                            <h4 class="font-semibold mb-2">Script Notes</h4>
+                            <p class="text-sm text-gray-600">Detailed shot-by-shot breakdown with technical specifications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Beginner Tutorials -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Best Beginner Tutorials</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                    <div class="video-container bg-black rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/rcgVhfBxKY4"
+                            title="What does a Script Supervisor do? | The Script Supervisor Responsibilities"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-xl font-semibold mb-4">Complete Script Supervisor Guide</h3>
+                        <p class="text-gray-600 mb-4">
+                            This comprehensive 17-minute tutorial covers everything a beginner needs to know about script supervision, 
+                            from basic responsibilities to advanced techniques used on professional sets.
+                        </p>
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                            <p class="text-sm text-blue-800">
+                                <strong>Perfect for:</strong> Film students and aspiring script supervisors who want a thorough introduction to the role.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-xl font-semibold mb-4">Script Continuity Sheets & Production Notes</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn about the essential paperwork and forms that script supervisors use daily. This tutorial breaks down 
+                            the different types of forms and how to fill them out properly.
+                        </p>
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                            <p class="text-sm text-green-800">
+                                <strong>Includes:</strong> Downloadable templates and real examples from professional productions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="video-container bg-black rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.youtube.com/embed/KHT8atuN8aI"
+                            title="Script Continuity Sheet & Other Important Film Production Notes"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Additional Resources -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-semibold text-center mb-8">Additional Learning Resources</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="video-container bg-black rounded-lg overflow-hidden mb-3" style="padding-bottom: 56.25%;">
+                                <iframe
+                                    src="https://www.youtube.com/embed/PA5Ho1ECYa8"
+                                    title="Script Supervisor Dylaine Bovaird explains continuity notes"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4 class="font-semibold text-sm">Professional Notes</h4>
+                            <p class="text-xs text-gray-600">Real script supervisor explains her process</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="video-container bg-black rounded-lg overflow-hidden mb-3" style="padding-bottom: 56.25%;">
+                                <iframe
+                                    src="https://www.youtube.com/embed/-kEQ24126P0"
+                                    title="Movie Set Job Description - Script Supervisor/Continuity"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4 class="font-semibold text-sm">Job Description</h4>
+                            <p class="text-xs text-gray-600">Quick overview of daily responsibilities</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="video-container bg-black rounded-lg overflow-hidden mb-3" style="padding-bottom: 56.25%;">
+                                <iframe
+                                    src="https://www.youtube.com/embed/D4C5Rig2wzs"
+                                    title="Top Tips for Script Supervisors"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4 class="font-semibold text-sm">Pro Tips</h4>
+                            <p class="text-xs text-gray-600">Advanced techniques from professionals</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="video-container bg-black rounded-lg overflow-hidden mb-3" style="padding-bottom: 56.25%;">
+                                <iframe
+                                    src="https://www.youtube.com/embed/WAc2HwGSMuE"
+                                    title="What is a Continuity Person & Their Roles on Set?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4 class="font-semibold text-sm">On-Set Roles</h4>
+                            <p class="text-xs text-gray-600">Behind-the-scenes footage and explanations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Worksheet -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Practice Worksheet: Script Supervisor Skills</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="worksheet-section p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-pencil-ruler mr-3 text-blue-500"></i>
+                        Exercise 1: Lining a Script
+                    </h3>
+                    <div class="bg-white p-6 rounded-lg border">
+                        <h4 class="font-semibold mb-4">Practice Scene</h4>
+                        <div class="font-mono text-sm bg-gray-50 p-4 rounded mb-4">
+                            <p><strong>SCENE 15 - COFFEE SHOP - DAY</strong></p>
+                            <br>
+                            <p>SARAH sits at a corner table, typing on her laptop. Steam rises from her coffee cup.</p>
+                            <br>
+                            <p>SARAH<br>(looking up from screen)<br>This deadline is impossible.</p>
+                            <br>
+                            <p>MIKE enters, spots Sarah, and walks over.</p>
+                            <br>
+                            <p>MIKE<br>Working hard or hardly working?</p>
+                            <br>
+                            <p>Sarah closes the laptop and smiles.</p>
+                            <br>
+                            <p>SARAH<br>You know me too well.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold mb-3">Shot List to Line:</h5>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-1 bg-red-500 mr-3 rounded"></div>
+                                        <span>Wide shot: Entire coffee shop</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-1 bg-blue-500 mr-3 rounded"></div>
+                                        <span>Medium shot: Sarah at table</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-1 bg-green-500 mr-3 rounded"></div>
+                                        <span>Close-up: Sarah's face</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-1 bg-purple-500 mr-3 rounded"></div>
+                                        <span>Over-shoulder: Mike's entrance</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-1 bg-yellow-500 mr-3 rounded"></div>
+                                        <span>Two-shot: Sarah and Mike</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold mb-3">Your Task:</h5>
+                                <ol class="text-sm space-y-1">
+                                    <li>1. Draw colored lines next to the script text</li>
+                                    <li>2. Each line should show which dialogue/action is covered</li>
+                                    <li>3. Use the color coding shown on the left</li>
+                                    <li>4. Lines can overlap when multiple shots cover the same text</li>
+                                    <li>5. Mark any insert shots or cutaways needed</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="worksheet-section p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-eye mr-3 text-green-500"></i>
+                        Exercise 2: Spot the Continuity Errors
+                    </h3>
+                    <div class="bg-white p-6 rounded-lg border">
+                        <p class="mb-4">Study these two "shots" from the same scene and identify the continuity errors:</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2 text-center">Shot A (Wide Shot)</h4>
+                                <div class="bg-gray-100 p-4 rounded border-2 border-dashed">
+                                    <ul class="text-sm space-y-1">
+                                        <li>• Sarah: Blue sweater, coffee cup 3/4 full</li>
+                                        <li>• Laptop: Open, screen showing document</li>
+                                        <li>• Table: Napkin under cup, phone to the right</li>
+                                        <li>• Hair: Pulled back in ponytail</li>
+                                        <li>• Watch: On left wrist</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-center">Shot B (Close-up)</h4>
+                                <div class="bg-gray-100 p-4 rounded border-2 border-dashed">
+                                    <ul class="text-sm space-y-1">
+                                        <li>• Sarah: Blue sweater, coffee cup 1/2 full</li>
+                                        <li>• Laptop: Closed</li>
+                                        <li>• Table: No napkin, phone to the left</li>
+                                        <li>• Hair: Loose around shoulders</li>
+                                        <li>• Watch: On right wrist</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded">
+                            <h5 class="font-semibold mb-2">Errors to Find:</h5>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <p class="font-medium">Major Errors:</p>
+                                    <ul class="ml-4 space-y-1">
+                                        <li>□ Coffee level changed</li>
+                                        <li>□ Laptop position changed</li>
+                                        <li>□ Hair continuity broken</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Minor Errors:</p>
+                                    <ul class="ml-4 space-y-1">
+                                        <li>□ Phone moved</li>
+                                        <li>□ Napkin disappeared</li>
+                                        <li>□ Watch switched wrists</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="worksheet-section p-8">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-clipboard-list mr-3 text-purple-500"></i>
+                        Exercise 3: Fill Out a Continuity Report
+                    </h3>
+                    <div class="bg-white p-6 rounded-lg border">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold mb-4">Scene Information</h4>
+                                <div class="space-y-3 text-sm">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <label class="font-medium">Scene Number:</label>
+                                        <input type="text" class="border rounded px-2 py-1" placeholder="15">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <label class="font-medium">Setup Number:</label>
+                                        <input type="text" class="border rounded px-2 py-1" placeholder="A">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <label class="font-medium">Take Number:</label>
+                                        <input type="text" class="border rounded px-2 py-1" placeholder="3">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <label class="font-medium">Shot Description:</label>
+                                        <input type="text" class="border rounded px-2 py-1" placeholder="CU Sarah">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-4">Continuity Notes</h4>
+                                <textarea class="w-full h-32 border rounded px-3 py-2 text-sm" placeholder="Enter continuity notes here:&#10;- Sarah's coffee cup level&#10;- Hair position&#10;- Laptop status&#10;- Any props moved"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-4 border-t">
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div>
+                                    <label class="font-medium block mb-1">Time Start:</label>
+                                    <input type="text" class="border rounded px-2 py-1 w-full" placeholder="10:34:15">
+                                </div>
+                                <div>
+                                    <label class="font-medium block mb-1">Time End:</label>
+                                    <input type="text" class="border rounded px-2 py-1 w-full" placeholder="10:34:28">
+                                </div>
+                                <div>
+                                    <label class="font-medium block mb-1">Duration:</label>
+                                    <input type="text" class="border rounded px-2 py-1 w-full" placeholder="00:13">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                        <h4 class="font-semibold mb-2 flex items-center justify-center">
+                            <i class="fas fa-lightbulb mr-2 text-yellow-500"></i>
+                            Practice Tips
+                        </h4>
+                        <div class="text-sm text-gray-700 space-y-2">
+                            <p>• Start with simple scenes before tackling complex action sequences</p>
+                            <p>• Practice timing scenes with a stopwatch - accuracy is crucial</p>
+                            <p>• Take reference photos of everything, even if it seems obvious</p>
+                            <p>• Watch movies with the sound off and look for continuity errors</p>
+                            <p>• Keep detailed notes - memory is unreliable on long shoot days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Downloadable Resources</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-pdf text-2xl text-blue-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Continuity Sheet Template</h4>
+                        <p class="text-sm text-gray-600 mb-4">Professional-grade continuity form used on film sets</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-alt text-2xl text-green-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Script Lining Guide</h4>
+                        <p class="text-sm text-gray-600 mb-4">Step-by-step guide with color coding examples</p>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded text-sm hover:bg-green-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clipboard-check text-2xl text-purple-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Daily Report Template</h4>
+                        <p class="text-sm text-gray-600 mb-4">End-of-day summary form for production tracking</p>
+                        <button class="bg-purple-500 text-white px-4 py-2 rounded text-sm hover:bg-purple-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-camera text-2xl text-orange-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Photo Reference Sheet</h4>
+                        <p class="text-sm text-gray-600 mb-4">Template for organizing continuity reference photos</p>
+                        <button class="bg-orange-500 text-white px-4 py-2 rounded text-sm hover:bg-orange-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-list-check text-2xl text-red-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Script Supervisor Checklist</h4>
+                        <p class="text-sm text-gray-600 mb-4">Essential pre-production and on-set checklist</p>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded text-sm hover:bg-red-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download PDF
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                        <div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-graduation-cap text-2xl text-teal-600"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Complete Resource Pack</h4>
+                        <p class="text-sm text-gray-600 mb-4">All templates, guides, and checklists in one download</p>
+                        <button class="bg-teal-500 text-white px-4 py-2 rounded text-sm hover:bg-teal-600 transition">
+                            <i class="fas fa-download mr-2"></i>Download ZIP
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-semibold text-center mb-6">Additional Learning Resources</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold mb-4">Recommended Books</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <i class="fas fa-book text-blue-500 mr-2 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">"The Film Director's Intuition" by Judith Weston</p>
+                                        <p class="text-gray-600">Includes excellent chapters on script supervision</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-book text-blue-500 mr-2 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">"Professional Techniques for the Director" by Jude Weston</p>
+                                        <p class="text-gray-600">Practical approaches to continuity and script supervision</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-4">Online Communities</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <i class="fas fa-users text-green-500 mr-2 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">Script Supervisors Network (Facebook)</p>
+                                        <p class="text-gray-600">Professional community for sharing tips and finding work</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-globe text-green-500 mr-2 mt-1"></i>
+                                    <div>
+                                        <p class="font-medium">StageAgent Script Supervision Forum</p>
+                                        <p class="text-gray-600">Q&A and discussions about script supervision techniques</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-semibold mb-4">Ready to Start Your Script Supervision Journey?</h3>
+            <p class="text-lg mb-6 opacity-90">
+                Script supervision is both an art and a science. With practice, attention to detail, and the right tools, 
+                you can become an essential part of any film production team.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <i class="fas fa-star text-2xl mb-2"></i>
+                    <h4 class="font-semibold mb-2">Start Small</h4>
+                    <p class="text-sm">Practice on short films and student projects</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <i class="fas fa-users text-2xl mb-2"></i>
+                    <h4 class="font-semibold mb-2">Network</h4>
+                    <p class="text-sm">Connect with local filmmakers and production companies</p>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                    <i class="fas fa-brain text-2xl mb-2"></i>
+                    <h4 class="font-semibold mb-2">Keep Learning</h4>
+                    <p class="text-sm">Watch films critically and study continuity techniques</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white border-opacity-20">
+                <p class="text-sm opacity-75">
+                    Created for aspiring filmmakers • Practice exercises and templates included • 
+                    Professional insights from industry veterans
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add interactivity for download buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Download')) {
+                button.addEventListener('click', function() {
+                    // Simulate download action
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check mr-2"></i>Downloaded!';
+                    this.classList.remove('hover:bg-blue-600', 'hover:bg-green-600', 'hover:bg-purple-600', 'hover:bg-orange-600', 'hover:bg-red-600', 'hover:bg-teal-600');
+                    this.classList.add('bg-gray-500');
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.className = this.className.replace('bg-gray-500', '');
+                        this.classList.add('hover:bg-blue-600');
+                    }, 2000);
+                });
+            }
+        });
+
+        // Add smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover effects for continuity error examples
+        document.querySelectorAll('.continuity-error').forEach(error => {
+            error.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+            });
+            
+            error.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

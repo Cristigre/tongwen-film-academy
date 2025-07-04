@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!https://rzxlcjnj.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BTS Editor: From Raw Moments to Cinematic Stories</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .workflow-step {
+            position: relative;
+        }
+        .workflow-step::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid #e5e7eb;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            transform: translateY(-50%);
+        }
+        .workflow-step:last-child::after {
+            display: none;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .hierarchy-box {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 8px;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .hierarchy-line {
+            width: 2px;
+            height: 40px;
+            background: #9ca3af;
+            margin: 0 auto;
+        }
+        .timeline-item {
+            border-left: 3px solid #667eea;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        .interactive-worksheet {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .tool-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="hero-title text-5xl md:text-6xl font-bold mb-6">The BTS Editor</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">From Raw Moments to Cinematic Stories</p>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg leading-relaxed mb-8">
+                    Behind every captivating film lies a treasure trove of untold stories. The BTS Editor is the digital architect who transforms raw behind-the-scenes footage into compelling narratives that connect audiences with the magic of filmmaking. More than just a "button pusher," they are storytellers, technical innovators, and the bridge between production and audience engagement.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><i class="fas fa-video mr-2"></i>Visual Storytelling</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><i class="fas fa-palette mr-2"></i>Creative Direction</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><i class="fas fa-users mr-2"></i>Team Collaboration</span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><i class="fas fa-rocket mr-2"></i>Marketing Impact</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- What Does a BTS Editor Do? -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                What Does a BTS Editor Do?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+                        <i class="fas fa-film mr-2"></i>On Set Responsibilities
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Coordinate with BTS photographers and videographers</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Identify key moments and emotional beats during filming</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Log and organize footage in real-time</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Collaborate with marketing teams for content planning</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Capture authentic, unguarded moments between takes</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">
+                        <i class="fas fa-cut mr-2"></i>Post-Production Magic
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Craft compelling narrative arcs from raw footage</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Color grade and enhance visual storytelling</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Design motion graphics and title sequences</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Mix audio and create emotional soundscapes</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>Deliver content across multiple formats and platforms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visual Examples -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">
+                    <i class="fas fa-images mr-2"></i>The BTS Editor's Workspace
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <img src="https://assets.videomaker.com/drpl/articles/18903/361-C01-Editing-primary.png" alt="Professional editing bay setup" class="rounded-lg shadow-md w-full h-64 object-cover mb-4">
+                        <p class="text-gray-600 font-medium">Professional editing bay with multiple monitors for efficient workflow</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://blog.frame.io/wp-content/uploads/2019/07/diy_color_suite_03.jpg" alt="Color grading suite" class="rounded-lg shadow-md w-full h-64 object-cover mb-4">
+                        <p class="text-gray-600 font-medium">Color grading suite where visual magic happens</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transforming Footage into Stories -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-magic text-purple-600 mr-3"></i>
+                Transforming Footage into Stories
+            </h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">The BTS Editor's Creative Process</h3>
+                <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
+                    <div class="workflow-step bg-blue-100 px-6 py-4 rounded-lg text-center min-w-40">
+                        <i class="fas fa-folder-open text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-semibold">Raw Footage</h4>
+                        <p class="text-sm text-gray-600">Hours of unedited content</p>
+                    </div>
+                    <div class="workflow-step bg-purple-100 px-6 py-4 rounded-lg text-center min-w-40">
+                        <i class="fas fa-search text-purple-600 text-2xl mb-2"></i>
+                        <h4 class="font-semibold">Story Discovery</h4>
+                        <p class="text-sm text-gray-600">Finding emotional beats</p>
+                    </div>
+                    <div class="workflow-step bg-green-100 px-6 py-4 rounded-lg text-center min-w-40">
+                        <i class="fas fa-cut text-green-600 text-2xl mb-2"></i>
+                        <h4 class="font-semibold">Creative Editing</h4>
+                        <p class="text-sm text-gray-600">Crafting the narrative</p>
+                    </div>
+                    <div class="workflow-step bg-red-100 px-6 py-4 rounded-lg text-center min-w-40">
+                        <i class="fas fa-heart text-red-600 text-2xl mb-2"></i>
+                        <h4 class="font-semibold">Emotional Impact</h4>
+                        <p class="text-sm text-gray-600">Connecting with audiences</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-eye text-3xl text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Visual Storytelling</h4>
+                        <p class="text-gray-600 text-sm">Using composition, color, and movement to convey emotion without words</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-music text-3xl text-purple-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Audio Design</h4>
+                        <p class="text-gray-600 text-sm">Crafting soundscapes that enhance the narrative and emotional journey</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-clock text-3xl text-green-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Pacing & Rhythm</h4>
+                        <p class="text-gray-600 text-sm">Controlling the flow of information to maintain audience engagement</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Examples -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">
+                    <i class="fas fa-play-circle mr-2"></i>Learn from the Masters
+                </h3>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-3">Behind the Scenes Editing Breakdown</h4>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/RXlM8sI18LI" title="Stranger Things VFX Editor Timeline" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2">See how professional editors organize complex timelines and create compelling BTS content</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3">Emotional Storytelling Techniques</h4>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/OrG3kHkLJyo" title="Visual Storytelling Techniques" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2">Master the art of visual storytelling to create more impactful BTS content</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h4 class="font-semibold mb-3">Essential Film Editing Techniques</h4>
+                    <div class="video-container max-w-4xl mx-auto">
+                        <iframe src="https://www.youtube.com/embed/FVR8zz8ci2k" title="6 Ways to Edit Any Scene" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2 text-center">Learn fundamental editing techniques that every BTS editor should master</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical and Creative Tools -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-tools text-orange-600 mr-3"></i>
+                Technical and Creative Tools
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-6 text-orange-600">
+                        <i class="fas fa-laptop-code mr-2"></i>Essential Software Arsenal
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Editing Platforms</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tool-badge">Adobe Premiere Pro</span>
+                                <span class="tool-badge">Final Cut Pro</span>
+                                <span class="tool-badge">DaVinci Resolve</span>
+                                <span class="tool-badge">Avid Media Composer</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Color Grading</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tool-badge">DaVinci Resolve</span>
+                                <span class="tool-badge">Adobe Lumetri</span>
+                                <span class="tool-badge">FilmLight Baselight</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Motion Graphics</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tool-badge">After Effects</span>
+                                <span class="tool-badge">Cinema 4D</span>
+                                <span class="tool-badge">Blender</span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-lg mb-2">Audio Post</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tool-badge">Pro Tools</span>
+                                <span class="tool-badge">Adobe Audition</span>
+                                <span class="tool-badge">Logic Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-600">
+                        <i class="fas fa-brain mr-2"></i>Creative Skills & Mindset
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-lightbulb text-yellow-500 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Story Intuition</h4>
+                                <p class="text-gray-600 text-sm">Ability to identify compelling moments and emotional peaks in raw footage</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-palette text-purple-500 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Visual Aesthetics</h4>
+                                <p class="text-gray-600 text-sm">Understanding of color theory, composition, and visual flow</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-blue-500 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Timing & Rhythm</h4>
+                                <p class="text-gray-600 text-sm">Mastery of pacing to maintain audience engagement and emotional impact</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-users text-green-500 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Collaboration</h4>
+                                <p class="text-gray-600 text-sm">Working effectively with directors, producers, and marketing teams</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-rocket text-red-500 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Adaptability</h4>
+                                <p class="text-gray-600 text-sm">Flexibility to work across different genres, styles, and delivery formats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaborating Across the BTS Team -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-network-wired text-green-600 mr-3"></i>
+                Collaborating Across the BTS Team
+            </h2>
+            
+            <!-- Hierarchy Chart -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Film Production Hierarchy</h3>
+                <div class="max-w-4xl mx-auto">
+                    <!-- Director Level -->
+                    <div class="flex justify-center mb-4">
+                        <div class="hierarchy-box bg-red-100 border-red-300 text-center">
+                            <i class="fas fa-crown text-red-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-lg">Director</h4>
+                            <p class="text-sm text-gray-600">Creative Vision Leader</p>
+                        </div>
+                    </div>
+                    <div class="hierarchy-line mx-auto"></div>
+                    
+                    <!-- BTS Director Level -->
+                    <div class="flex justify-center mb-4">
+                        <div class="hierarchy-box bg-blue-100 border-blue-300 text-center">
+                            <i class="fas fa-camera text-blue-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-lg">BTS Director</h4>
+                            <p class="text-sm text-gray-600">Behind-the-Scenes Oversight</p>
+                        </div>
+                    </div>
+                    <div class="hierarchy-line mx-auto"></div>
+                    
+                    <!-- BTS Team Level -->
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <div class="hierarchy-box bg-purple-100 border-purple-300 text-center flex-1 min-w-48">
+                            <i class="fas fa-cut text-purple-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-lg">BTS Editor</h4>
+                            <p class="text-sm text-gray-600">Story Architect</p>
+                        </div>
+                        <div class="hierarchy-box bg-green-100 border-green-300 text-center flex-1 min-w-48">
+                            <i class="fas fa-video text-green-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-lg">BTS Videographer</h4>
+                            <p class="text-sm text-gray-600">Motion Capture Specialist</p>
+                        </div>
+                        <div class="hierarchy-box bg-yellow-100 border-yellow-300 text-center flex-1 min-w-48">
+                            <i class="fas fa-camera-retro text-yellow-600 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-lg">BTS Photographer</h4>
+                            <p class="text-sm text-gray-600">Still Image Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collaboration Workflow -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Collaborative Workflow</h3>
+                <div class="space-y-6">
+                    <div class="timeline-item">
+                        <h4 class="font-semibold text-lg mb-2">Pre-Production Planning</h4>
+                        <p class="text-gray-700 mb-3">BTS Editor collaborates with BTS Director to establish creative vision, identify key moments to capture, and plan content deliverables for marketing and archival purposes.</p>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <strong class="text-blue-800">Key Activities:</strong>
+                            <span class="text-blue-700"> Script analysis, shot planning, equipment coordination, content calendar development</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4 class="font-semibold text-lg mb-2">Production Phase</h4>
+                        <p class="text-gray-700 mb-3">During filming, the BTS Editor works closely with videographers and photographers to ensure comprehensive coverage while maintaining efficient workflows that don't disrupt the main production.</p>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <strong class="text-green-800">Key Activities:</strong>
+                            <span class="text-green-700"> Real-time logging, quality control, backup management, communication with marketing team</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4 class="font-semibold text-lg mb-2">Post-Production Collaboration</h4>
+                        <p class="text-gray-700 mb-3">The BTS Editor transforms raw content into polished deliverables, working with colorists, sound designers, and motion graphics artists to create compelling BTS content.</p>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <strong class="text-purple-800">Key Activities:</strong>
+                            <span class="text-purple-700"> Story development, technical finishing, multi-format delivery, audience engagement optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Learning Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-graduation-cap text-indigo-600 mr-3"></i>
+                Interactive Learning Tools
+            </h2>
+
+            <!-- BTS Edit Timeline Mockup -->
+            <div class="interactive-worksheet mb-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">
+                    <i class="fas fa-timeline mr-2"></i>Build Your BTS Edit Timeline
+                </h3>
+                <p class="text-gray-700 mb-6 text-center">Practice organizing a BTS edit by arranging these story elements in chronological order. Consider emotional pacing and audience engagement.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-4 text-purple-600">Available Story Elements:</h4>
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500 cursor-move">
+                                <h5 class="font-semibold">Director's Vision Interview</h5>
+                                <p class="text-sm text-gray-600">3-minute interview explaining the film's concept</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-green-500 cursor-move">
+                                <h5 class="font-semibold">Cast Chemistry Moments</h5>
+                                <p class="text-sm text-gray-600">Candid interactions between actors off-camera</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-red-500 cursor-move">
+                                <h5 class="font-semibold">Technical Challenges</h5>
+                                <p class="text-sm text-gray-600">Crew overcoming difficult filming conditions</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-yellow-500 cursor-move">
+                                <h5 class="font-semibold">Emotional Breakthrough</h5>
+                                <p class="text-sm text-gray-600">Actor achieving a perfect take after multiple attempts</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-purple-500 cursor-move">
+                                <h5 class="font-semibold">Wrap Party Celebration</h5>
+                                <p class="text-sm text-gray-600">Team celebrating completion of filming</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4 text-green-600">Your Timeline Structure:</h4>
+                        <div class="space-y-3">
+                            <div class="bg-gray-100 p-4 rounded-lg border-2 border-dashed border-gray-300 min-h-16 flex items-center justify-center text-gray-500">
+                                Opening Hook (30 seconds)
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg border-2 border-dashed border-gray-300 min-h-16 flex items-center justify-center text-gray-500">
+                                Act 1: Setup (60 seconds)
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg border-2 border-dashed border-gray-300 min-h-16 flex items-center justify-center text-gray-500">
+                                Act 2: Development (90 seconds)
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg border-2 border-dashed border-gray-300 min-h-16 flex items-center justify-center text-gray-500">
+                                Act 3: Resolution (30 seconds)
+                            </div>
+                        </div>
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                            <h5 class="font-semibold text-blue-800 mb-2">Storytelling Tips:</h5>
+                            <ul class="text-sm text-blue-700 space-y-1">
+                                <li>• Start with intrigue to hook viewers immediately</li>
+                                <li>• Build emotional connection through character moments</li>
+                                <li>• Show challenges and how they're overcome</li>
+                                <li>• End with resolution and celebration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Arc Worksheet -->
+            <div class="interactive-worksheet">
+                <h3 class="text-2xl font-semibold mb-6 text-center">
+                    <i class="fas fa-chart-line mr-2"></i>BTS Story Arc Development
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-semibold text-lg mb-4 text-blue-600">
+                            <i class="fas fa-play mr-2"></i>Beginning
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Hook/Opening:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="What grabs attention in the first 10 seconds?"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Key Characters:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="Who are the main people in your BTS story?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-semibold text-lg mb-4 text-green-600">
+                            <i class="fas fa-mountain mr-2"></i>Middle
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Main Challenge:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="What obstacle or challenge drives the story?"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Emotional Peak:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="What moment creates the strongest emotional response?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-semibold text-lg mb-4 text-purple-600">
+                            <i class="fas fa-flag-checkered mr-2"></i>End
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Resolution:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="How is the challenge resolved?"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Call to Action:</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg text-sm" rows="2" placeholder="What do you want viewers to do after watching?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+                    <h5 class="font-semibold text-yellow-800 mb-2">Marketing Deliverables Checklist:</h5>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>30-second social media teaser</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>2-minute extended trailer</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Character introduction clips</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Director's commentary segments</span>
+                            </label>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Technical breakdown featurette</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Blooper reel compilation</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Still photo gallery</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span>Archive-quality documentary</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Beginner Resources -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+                <i class="fas fa-rocket text-red-600 mr-3"></i>
+                Best Beginner Resources
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Free Learning Resources -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-graduation-cap text-4xl text-blue-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold">Free Learning</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fab fa-youtube text-red-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>YouTube Channels:</strong>
+                                <p class="text-sm">StudioBinder, Film Editing Pro, This Guy Edits</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-book text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Online Tutorials:</strong>
+                                <p class="text-sm">Adobe Creative Cloud tutorials, DaVinci Resolve training</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Communities:</strong>
+                                <p class="text-sm">Reddit r/editors, Creative COW forums</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Paid Courses -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-4xl text-green-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold">Professional Courses</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-certificate text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Online Platforms:</strong>
+                                <p class="text-sm">MasterClass, Udemy, LinkedIn Learning</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-university text-orange-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Film Schools:</strong>
+                                <p class="text-sm">NYU, USC, Art Center College of Design</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-laptop text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Specialized Training:</strong>
+                                <p class="text-sm">EditMentor, Future Media Concepts</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Essential Tools -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-toolbox text-4xl text-orange-600 mb-3"></i>
+                        <h3 class="text-xl font-semibold">Starter Tools</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-download text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Free Software:</strong>
+                                <p class="text-sm">DaVinci Resolve, OpenShot, HitFilm Express</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-hdd text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Hardware Essentials:</strong>
+                                <p class="text-sm">External drives, calibrated monitor, audio interface</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cloud text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Asset Libraries:</strong>
+                                <p class="text-sm">Freesound, Unsplash, Adobe Stock (free)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Getting Started Roadmap -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mt-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">
+                    <i class="fas fa-road mr-2"></i>Your BTS Editor Journey Roadmap
+                </h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">1</div>
+                        <h4 class="font-semibold mb-2">Learn the Basics</h4>
+                        <p class="text-sm text-gray-600">Master fundamental editing techniques and software interfaces</p>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">2</div>
+                        <h4 class="font-semibold mb-2">Practice Projects</h4>
+                        <p class="text-sm text-gray-600">Create BTS content for student films and personal projects</p>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">3</div>
+                        <h4 class="font-semibold mb-2">Build Portfolio</h4>
+                        <p class="text-sm text-gray-600">Develop a strong reel showcasing diverse BTS storytelling skills</p>
+                    </div>
+                    <div class="text-center p-4 bg-red-50 rounded-lg">
+                        <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-xl font-bold">4</div>
+                        <h4 class="font-semibold mb-2">Network & Grow</h4>
+                        <p class="text-sm text-gray-600">Connect with industry professionals and seek mentorship opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-2xl p-12">
+            <h2 class="text-4xl font-bold mb-6">Ready to Become a BTS Story Architect?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                The film industry needs passionate storytellers who can transform raw moments into unforgettable narratives. Your journey as a BTS Editor starts with understanding that every frame has the potential to move hearts, inspire minds, and create lasting connections between films and their audiences.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-heart text-red-400 mr-2"></i>
+                    <span class="font-semibold">Emotional Storytelling</span>
+                </div>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-cogs text-yellow-400 mr-2"></i>
+                    <span class="font-semibold">Technical Excellence</span>
+                </div>
+                <div class="bg-white bg-opacity-20 px-6 py-3 rounded-full">
+                    <i class="fas fa-handshake text-green-400 mr-2"></i>
+                    <span class="font-semibold">Creative Collaboration</span>
+                </div>
+            </div>
+            <p class="text-lg mt-8 opacity-90">
+                <i class="fas fa-quote-left mr-2"></i>
+                Every great film has great stories behind it. Be the one who tells them.
+                <i class="fas fa-quote-right ml-2"></i>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 mt-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-lg mb-4">
+                <i class="fas fa-film mr-2"></i>
+                The BTS Editor: Where Technical Skill Meets Creative Vision
+            </p>
+            <p class="text-gray-400">
+                Created for aspiring filmmakers who believe that every story behind the story deserves to be told with passion and precision.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

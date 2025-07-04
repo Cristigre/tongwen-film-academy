@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!https://pxuamakh.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Make-up Artist: Character Creation Through Visual Storytelling</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .transform-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .transform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            margin: 3rem 0;
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+        .interactive-element {
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="heading-font text-5xl md:text-6xl font-bold mb-6">The Make-up Artist</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">Character Creation Through Visual Storytelling</p>
+                <div class="flex justify-center items-center space-x-8 text-sm md:text-base">
+                    <div class="flex items-center">
+                        <i class="fas fa-palette mr-2"></i>
+                        <span>Creative Vision</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-magic mr-2"></i>
+                        <span>Character Transformation</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-film mr-2"></i>
+                        <span>Visual Storytelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="heading-font text-4xl font-bold text-gray-800 mb-6">Beyond "Making Someone Pretty"</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    A Make-up Artist in film production is far more than a beauty expert—they are <strong>storytelling collaborators</strong> 
+                    who bring characters to life through detailed visual choices. They analyze scripts, develop character looks, 
+                    maintain continuity across shooting days, and work closely with directors and costume designers to support 
+                    the narrative vision.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Key Responsibilities:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-search text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Character Analysis:</strong> Breaking down scripts to understand each character's journey, age, social status, and emotional arc
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-brush text-purple-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Skin Preparation:</strong> Creating the perfect canvas for character transformation, from natural beauty to elaborate special effects
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>On-Set Touch-ups:</strong> Maintaining makeup integrity throughout long shooting days and multiple takes
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-camera text-red-600 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Continuity Management:</strong> Ensuring makeup matches perfectly across scenes shot days or weeks apart
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <img src="https://d1u6g1e1nisfhs.cloudfront.net/wp-content/uploads/articles-makeup-department-w.jpg" 
+                         alt="Makeup department on set" 
+                         class="rounded-lg shadow-xl w-full">
+                    <p class="text-sm text-gray-500 mt-2">The makeup department in action on a film set</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Character Transformation Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Beyond Beauty — Character Transformation</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="space-y-8">
+                    <div class="transform-card bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-mask text-purple-600 mr-2"></i>Prosthetics & Special Effects
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Creating otherworldly characters through advanced prosthetic techniques, from subtle aging to complete creature transformations.
+                        </p>
+                        <img src="https://d3dkwn7op6iuz.cloudfront.net/ckeditor_assets/2023/02/27/the-penguin-colin-farrell-penguin-makeup-side-by-side.jpg" 
+                             alt="Colin Farrell Penguin transformation" 
+                             class="w-full rounded-lg">
+                        <p class="text-sm text-gray-500 mt-2">Colin Farrell's transformation into The Penguin</p>
+                    </div>
+                    
+                    <div class="transform-card bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-hourglass-half text-orange-600 mr-2"></i>Aging & Time Progression
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Mastering the art of aging characters realistically, showing the passage of time through subtle makeup techniques.
+                        </p>
+                        <img src="https://i.ytimg.com/vi/XEjInqsC5sQ/maxresdefault.jpg" 
+                             alt="Aging makeup transformation" 
+                             class="w-full rounded-lg">
+                        <p class="text-sm text-gray-500 mt-2">Professional aging techniques for film</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="transform-card bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-theater-masks text-red-600 mr-2"></i>Before & After Transformations
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            The dramatic power of makeup artistry in creating completely new identities for actors.
+                        </p>
+                        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/11/actors-special-effects-makeup-before-after-fb4-png__700.jpg" 
+                             alt="Before and after makeup transformations" 
+                             class="w-full rounded-lg">
+                        <p class="text-sm text-gray-500 mt-2">Dramatic before and after transformations</p>
+                    </div>
+                    
+                    <div class="transform-card bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-palette text-blue-600 mr-2"></i>Naturalistic Beauty
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Creating "no-makeup makeup" looks that enhance actors' natural features while supporting character authenticity.
+                        </p>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>Key Difference:</strong> Film makeup must work under harsh lighting conditions and high-definition cameras, 
+                                requiring different techniques than everyday or fashion makeup.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Video Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Master Classes in Action</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Watch professional makeup artists demonstrate their craft, from character breakdowns to on-set applications and special effects mastery.
+            </p>
+            
+            <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Aging Techniques & Character Development</h3>
+                    <div class="video-container mb-4">
+                        <iframe src="https://www.youtube.com/embed/XEjInqsC5sQ" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <p class="text-gray-600 text-sm">Learn how professional artists age performers up to 95 years old using advanced makeup techniques.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Behind the Scenes: Hair & Makeup Collaboration</h3>
+                    <div class="video-container mb-4">
+                        <iframe src="https://www.youtube.com/embed/5J6lvk5xdJM" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <p class="text-gray-600 text-sm">Explore the collaborative process between makeup artists and hair stylists on professional film sets.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Special Effects Mastery</h3>
+                <div class="video-container mb-4">
+                    <iframe src="https://www.youtube.com/embed/Bax9LAXej4A" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <p class="text-gray-600 text-sm text-center">Academy Award-winning techniques for creating movie monsters and creature effects.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Collaboration Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Collaborating with Costume and Hair</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <img src="https://makeupmanifesto.com/wp-content/uploads/2023/03/image-39.png" 
+                         alt="Makeup artist working on set" 
+                         class="w-full rounded-lg shadow-lg mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">The Collaborative Triangle</h3>
+                    <p class="text-gray-600 mb-4">
+                        Makeup artists work as part of a creative triumvirate with costume designers and hair stylists to create cohesive character looks. 
+                        This collaboration ensures that every visual element supports the story being told.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Color palette coordination</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Period accuracy research</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Character arc visualization</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Technical logistics planning</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">
+                            <i class="fas fa-users text-blue-600 mr-2"></i>Director Collaboration
+                        </h4>
+                        <p class="text-gray-600">
+                            Regular meetings to discuss character vision, mood boards, and how makeup supports the director's storytelling goals.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">
+                            <i class="fas fa-tshirt text-purple-600 mr-2"></i>Costume Designer Partnership
+                        </h4>
+                        <p class="text-gray-600">
+                            Coordinating makeup tones with fabric colors, ensuring makeup doesn't clash with costume choices, and matching historical periods.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-3">
+                            <i class="fas fa-cut text-orange-600 mr-2"></i>Hair Department Sync
+                        </h4>
+                        <p class="text-gray-600">
+                            Working in tandem with hair stylists to create unified looks, sharing application time, and coordinating touch-ups between takes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Hierarchy Chart Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Film Production Hierarchy</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+                Understanding where the Make-up Artist fits within the film production structure and their collaborative relationships.
+            </p>
+            
+            <div class="chart-container mb-8">
+                <canvas id="hierarchyChart"></canvas>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <i class="fas fa-crown text-blue-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">Decision Makers</h4>
+                    <p class="text-sm text-gray-600">Director and Costume Designer provide creative vision and final approval</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg text-center">
+                    <i class="fas fa-equals text-purple-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">Creative Partners</h4>
+                    <p class="text-sm text-gray-600">Make-up Artist and Hair Designer work as equals in character creation</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <i class="fas fa-hands-helping text-green-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-gray-800 mb-2">Support Team</h4>
+                    <p class="text-sm text-gray-600">Assistants and SFX Technicians execute the creative vision</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Continuity Challenges Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">On-Set Challenges and Continuity</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">The Continuity Challenge</h3>
+                    <p class="text-gray-600 mb-6">
+                        One of the most critical aspects of film makeup is maintaining perfect continuity. Scenes are rarely shot in chronological order, 
+                        meaning a makeup artist must recreate exact looks days, weeks, or even months apart.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-camera text-red-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Photo Documentation</h4>
+                                <p class="text-gray-600 text-sm">Detailed photos from multiple angles after each makeup application</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-clipboard-list text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Continuity Sheets</h4>
+                                <p class="text-gray-600 text-sm">Detailed notes about products used, application techniques, and timing</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-clock text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Scene Tracking</h4>
+                                <p class="text-gray-600 text-sm">Monitoring character progression and makeup changes throughout the story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://suzettemariel.wordpress.com/wp-content/uploads/2011/05/makeup_continuity_stickers.jpg" 
+                         alt="Makeup continuity tracking" 
+                         class="w-full rounded-lg shadow-lg mb-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-4">Common On-Set Scenarios</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-sun text-yellow-500 mr-3"></i>
+                                <span>Long outdoor shoots requiring constant touch-ups due to weather</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-droplet text-blue-500 mr-3"></i>
+                                <span>Emotional scenes requiring tear-proof makeup applications</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-running text-red-500 mr-3"></i>
+                                <span>Action sequences demanding durable, sweat-resistant formulations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-moon text-purple-500 mr-3"></i>
+                                <span>Night shoots with different lighting requirements</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Interactive Worksheet Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Interactive Character Design Worksheet</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="interactive-element p-8 rounded-lg mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-pencil-alt text-blue-600 mr-2"></i>Character Makeup Planning Exercise
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        Practice thinking like a professional makeup artist by filling out this character analysis worksheet. 
+                        Consider how each element contributes to storytelling.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Character Name & Age Range</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="e.g., Sarah, 25-35 years old">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Social Status & Profession</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="e.g., Working-class teacher">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Time Period & Setting</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="e.g., 1950s suburban America">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Character's Emotional Journey</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" rows="3" placeholder="How does the character change throughout the story?"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Skin Tone & Complexion Notes</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="e.g., Fair with freckles, signs of sun exposure">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Special Makeup Requirements</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                    <option>None - Natural look</option>
+                                    <option>Aging effects</option>
+                                    <option>Injuries/scars</option>
+                                    <option>Fantasy/creature elements</option>
+                                    <option>Period-specific styling</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Color Palette</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="e.g., Warm browns, muted pinks, no bold colors">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Continuity Considerations</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" rows="3" placeholder="What scenes will be challenging for continuity?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                        <h4 class="font-bold text-gray-800 mb-3">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>Pro Tips for Character Development
+                        </h4>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Consider the character's lifestyle - do they work outdoors? Are they stressed?</li>
+                            <li>• Think about makeup access - would this character wear makeup? What kind?</li>
+                            <li>• Factor in the story's timeline - does the character age during the film?</li>
+                            <li>• Remember the genre - horror requires different approaches than romantic comedy</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-4">
+                            <i class="fas fa-calendar-alt text-purple-600 mr-2"></i>Continuity Tracking Template
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium">Scene Number:</span>
+                                <input type="text" class="border-b border-gray-300 w-20 text-center" placeholder="15A">
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium">Story Day:</span>
+                                <input type="text" class="border-b border-gray-300 w-20 text-center" placeholder="Day 3">
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium">Time of Day:</span>
+                                <input type="text" class="border-b border-gray-300 w-20 text-center" placeholder="Morning">
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="font-medium">Makeup State:</span>
+                                <input type="text" class="border-b border-gray-300 w-32 text-center" placeholder="Fresh/Tired/Injured">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-bold text-gray-800 mb-4">
+                            <i class="fas fa-palette text-green-600 mr-2"></i>Makeup Application Timeline
+                        </h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between">
+                                <span>Base/Foundation:</span>
+                                <span class="font-medium">15-20 min</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Character Details:</span>
+                                <span class="font-medium">20-30 min</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Special Effects:</span>
+                                <span class="font-medium">1-4 hours</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Touch-ups/Scene:</span>
+                                <span class="font-medium">5-10 min</span>
+                            </div>
+                            <div class="border-t pt-2 mt-2 flex justify-between font-bold">
+                                <span>Daily Total:</span>
+                                <span>2-6 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Resources Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-4xl font-bold text-center text-gray-800 mb-12">Best Beginner Resources</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-book text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Essential Reading</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• "Making Faces" by Kevyn Aucoin</li>
+                        <li>• "The Makeup Artist Handbook" by Gretchen Davis</li>
+                        <li>• "Character Makeup" by Stan Winston</li>
+                        <li>• Industry magazines: Make-Up Artist Magazine</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-graduation-cap text-purple-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Training Programs</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Cinema Makeup School (Los Angeles)</li>
+                        <li>• Stan Winston School (Online)</li>
+                        <li>• Local film schools and workshops</li>
+                        <li>• Apprenticeship opportunities</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-tools text-green-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Starter Kit Essentials</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Professional foundation palette</li>
+                        <li>• Concealer and color correctors</li>
+                        <li>• Setting powders and sprays</li>
+                        <li>• Basic prosthetic supplies</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-users text-red-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Networking</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Local film commissions</li>
+                        <li>• Makeup artist unions (IATSE)</li>
+                        <li>• Industry meetups and events</li>
+                        <li>• Social media communities</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-laptop text-orange-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Online Learning</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• YouTube tutorials from professionals</li>
+                        <li>• MasterClass courses</li>
+                        <li>• Stan Winston School online</li>
+                        <li>• Industry blogs and forums</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-briefcase text-indigo-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Getting Started</h3>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li>• Volunteer on student films</li>
+                        <li>• Build a portfolio of work</li>
+                        <li>• Work as an assistant first</li>
+                        <li>• Study film and character analysis</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                    <i class="fas fa-star text-yellow-500 mr-2"></i>Your Journey Starts Here
+                </h3>
+                <p class="text-gray-600 text-center mb-6">
+                    Remember, every professional makeup artist started as a beginner. The key is to practice constantly, 
+                    study the masters, and never stop learning. Film makeup artistry is both a technical skill and an art form—
+                    embrace both aspects to become a true storytelling collaborator.
+                </p>
+                <div class="flex justify-center">
+                    <div class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg">
+                        <i class="fas fa-paint-brush mr-2"></i>
+                        <span class="font-medium">Start Creating Characters Today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">
+                <i class="fas fa-palette mr-2"></i>
+                The Make-up Artist: Where artistry meets storytelling in film production
+            </p>
+            <p class="text-sm opacity-75">
+                Educational resource for aspiring filmmakers and students
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Hierarchy Chart
+        const ctx = document.getElementById('hierarchyChart').getContext('2d');
+        const hierarchyChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Director', 'Costume Designer', 'Make-up Artist', 'Hair Designer', 'Assistants', 'SFX Technicians'],
+                datasets: [{
+                    data: [25, 20, 18, 18, 10, 9],
+                    backgroundColor: [
+                        '#3B82F6', // Blue - Director
+                        '#8B5CF6', // Purple - Costume Designer
+                        '#EF4444', // Red - Make-up Artist
+                        '#F59E0B', // Orange - Hair Designer
+                        '#10B981', // Green - Assistants
+                        '#6B7280'  // Gray - SFX Technicians
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#FFFFFF'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Film Production Department Relationships',
+                        font: {
+                            size: 18,
+                            weight: 'bold'
+                        },
+                        padding: 20
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

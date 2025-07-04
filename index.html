@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tongwen Film Academy - Film Production Educational Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		body {
+            font-family: 'Inter', sans-serif;
+        }
+        .active-menu {
+            background-color: #FFD700 !important;
+            color: #000 !important;
+        }
+        .submenu-active {
+            background-color: #FFD700 !important;
+            color: #000 !important;
+        }
+        .sidebar {
+            min-height: calc(100vh - 80px);
+			position: fixed;
+			top: 80px;
+			bottom: 0;
+			overflow-y: auto;
+        }
+        .content-area {
+            min-height: calc(100vh - 80px);
+			margin-top: 80px;
+			margin-left: 256px;
+			height: calc(100vh - 80px);
+			overflow-y: auto;
+        }
+        .role-link {
+            transition: all 0.2s ease;
+        }
+        .role-link:hover {
+            background-color: #f3f4f6;
+            transform: translateX(4px);
+        }
+        .department-section {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+        }
+
+		.department-directing {
+            border-left: 4px solid #1d4ed8;
+            padding-left: 1rem;
+        }
+		.department-camera {
+            border-left: 4px solid #dc2626;
+            padding-left: 1rem;
+        }
+        .department-sound {
+            border-left: 4px solid #f59e0b;
+            padding-left: 1rem;
+        }
+		.department-art {
+            border-left: 4px solid #7c3aed;
+            padding-left: 1rem;
+        }
+        .department-music {
+            border-left: 4px solid #047857;
+            padding-left: 1rem;
+        }
+        .department-costume {
+            border-left: 4px solid #be185d;
+            padding-left: 1rem;
+        }
+        .department-lighting {
+            border-left: 4px solid #ea580c;
+            padding-left: 1rem;
+        }
+        .department-editing {
+            border-left: 4px solid #000000;
+            padding-left: 1rem;
+        }
+		.department-cast {
+            border-left: 4px solid #10b981;
+            padding-left: 1rem;
+        }
+        .department-bts {
+            border-left: 4px solid #92400e;
+            padding-left: 1rem;
+        }
+        .department-support {
+            border-left: 4px solid #4b5563;
+            padding-left: 1rem;
+        }
+		.film-image {
+            transition: transform 0.3s ease;
+        }
+        .film-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md h-20 flex items-center px-6">
+        <div class="flex items-center space-x-4">
+			<img src="images/TFA-logo.png" alt="Tongwen Film Academy logo" class="h-12 cursor-pointer" onclick="openLogoModal()">
+            <img src="images/TFA-title.png" alt="Tongwen Film Academy title" class="h-12">
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <nav class="w-64 bg-white shadow-lg sidebar">
+            <div class="p-6">
+                <ul class="space-y-2">
+                    <li>
+                        <button onclick="showPage('main')" id="menu-main" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-home mr-3"></i>Main Page
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showPage('production-stages')" id="menu-production" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-clapperboard mr-3"></i>Production Stages
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showPage('film-roles')" id="menu-roles" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-users mr-3"></i>Film Roles
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="toggleOurMovie()" id="menu-movie" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-video mr-3"></i>Our Movie
+                            <i class="fas fa-chevron-down float-right mt-1" id="movie-chevron"></i>
+                        </button>
+                        <ul class="ml-6 mt-2 space-y-1 hidden" id="movie-submenu">
+                            <li>
+                                <button onclick="showPage('film-plot')" id="submenu-plot" class="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-100 text-sm transition-colors submenu-active">
+                                    <i class="fas fa-book mr-2"></i>Film Plot
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="showPage('movie-script')" id="submenu-script" class="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-100 text-sm transition-colors">
+                                    <i class="fas fa-scroll mr-2"></i>Movie Script
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="showPage('storyboards')" id="submenu-storyboards" class="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-100 text-sm transition-colors">
+                                    <i class="fas fa-images mr-2"></i>Storyboards
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="showPage('shotlists')" id="submenu-shotlists" class="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-100 text-sm transition-colors">
+                                    <i class="fas fa-list mr-2"></i>Shotlists
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="showPage('shooting-info')" id="submenu-shooting" class="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-100 text-sm transition-colors">
+                                    <i class="fas fa-info-circle mr-2"></i>Shooting Information
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="showPage('qa')" id="menu-qa" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-question-circle mr-3"></i>Q&A
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showPage('gallery')" id="menu-gallery" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 font-medium transition-colors">
+                            <i class="fas fa-images mr-3"></i>Student Gallery
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 content-area">
+            <!-- Main Page -->
+            <div id="page-main" class="page-content">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h1 class="text-5xl font-bold text-gray-800 mb-4">Welcome to Tongwen Film Academy</h1>
+                        <p class="text-xl text-gray-600">Where Dreams Become Cinema</p>
+                    </div>
+                    
+					<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20 items-center">
+                        <div class="lg:col-span-2">
+							<div class="bg-white rounded-lg shadow-lg p-8">
+								<h3 class="text-2xl font-semibold text-blue-600 mb-6">The Art of Collaborative Storytelling</h3>
+								<div class="space-y-6 text-gray-700 leading-relaxed">
+									<p class="text-lg">Film production is the ultimate symphony of creative collaboration, where dozens of specialized professionals unite to transform a written story into visual poetry. Every frame you see on screen represents the harmonious work of artists, technicians, and visionaries who understand that cinema is born from teamwork, not individual genius.</p>
+                            
+									<p class="text-lg">The technical complexity of modern filmmaking rivals that of launching a spacecraft—from the precise choreography of camera movements to the intricate layering of sound design, every element must be perfectly synchronized. Behind every seemingly effortless shot lies meticulous planning, cutting-edge technology, and the seamless coordination of multiple departments working as one unified creative force.</p>
+                            
+									<p class="text-lg">In film production, teamwork isn't just important—it's everything. The magic happens when the director's vision meets the cinematographer's artistry, when the production designer's world-building aligns with the costume designer's character insights, and when every crew member, from the script supervisor to the boom operator, contributes their expertise to serve the greater story.</p>
+								</div>
+							</div>
+						</div>
+						<div class="space-y-4">
+                            <img src="images/crew-sippakorn-yamkasikorn.jpeg" alt="Film shooting" class="film-image w-full h-40 object-cover rounded-lg shadow-lg">
+                            <img src="images/behind-the-scenes-film-crew-team-nowm.png" alt="Behind the scenes filming" class="film-image w-full h-40 object-cover rounded-lg shadow-lg">
+							<img src="images/istockphoto-1362913179-640x640.jpg" alt="Music video shooting" class="film-image w-full h-48 object-cover rounded-lg shadow-lg">
+                        </div>
+                    </div>
+
+					<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20 items-center">
+                        <div class="lg:col-span-2">
+							<div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg shadow-lg p-8">
+								<h3 class="text-2xl font-semibold text-red-600 mb-6"><i class="fas fa-exclamation-triangle mr-2"></i>Myth-Busting: Common Film Production Misconceptions</h3>
+								<div class="space-y-4">
+									<div class="bg-white rounded-lg p-6 shadow-sm">
+										<h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-times-circle text-red-500 mr-2"></i>Myth: "Directors do everything alone"</h4>
+										<p class="text-gray-700"><strong>Reality:</strong> Directors are collaborative leaders who work closely with department heads, relying on the expertise of dozens of specialists to bring their vision to life.</p>
+									</div>
+									<div class="bg-white rounded-lg p-6 shadow-sm">
+										<h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-times-circle text-red-500 mr-2"></i>Myth: "Film production is just pointing and shooting"</h4>
+										<p class="text-gray-700"><strong>Reality:</strong> Professional filmmaking involves months of pre-production planning, complex technical setups, and meticulous post-production work. Shooting is just one phase of a multi-stage process.</p>
+									</div>
+									<div class="bg-white rounded-lg p-6 shadow-sm">
+										<h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-times-circle text-red-500 mr-2"></i>Myth: "Only famous people matter in film"</h4>
+										<p class="text-gray-700"><strong>Reality:</strong> Every role, from the gaffer to the script supervisor, is crucial. Films succeed because of the dedication and skill of the entire crew, not just the stars in front of the camera.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="space-y-4">
+                            <img src="images/article_full2x.jpg" alt="Film crew on set" class="film-image w-full h-40 object-cover rounded-lg shadow-lg">
+                            <img src="images/master-of-the-perfect-shot.png" alt="Roger Deakins at work" class="film-image w-full h-40 object-cover rounded-lg shadow-lg">
+							<img src="images/js-2.jpg" alt="Jason Statham at work" class="film-image w-full h-48 object-cover rounded-lg shadow-lg">
+                        </div>
+					</div>
+
+					<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20 items-center">
+                        <div class="lg:col-span-2">
+							<div class="bg-white rounded-lg shadow-lg p-8">
+								<h3 class="text-2xl font-semibold text-green-600 mb-6">About This Educational Platform</h3>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									This comprehensive educational website is designed specifically for film students who want to understand the complete ecosystem of professional film production. Here, you'll discover the intricate web of roles, departments, and processes that transform creative ideas into finished films.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									Navigate through our Production Stages to understand the three critical phases of filmmaking, explore our detailed Film Roles section to learn about every position from director to cable person, and follow our actual student project in the Our Movie section to see these principles applied in practice this year.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed">
+									Whether you're aspiring to act, produce, or work in any of the technical departments, this platform will give you the foundational knowledge to understand how professional film productions operate and where your passion might fit within this incredible collaborative art form.
+								</p>
+							</div>
+						</div>
+						<div class="space-y-4">
+                            <img src="images/film-crew-1.jpg" alt="Film crew at work" class="film-image w-full h-56 object-cover rounded-lg shadow-lg">
+                            <img src="images/cinematographer-roger-deakins.png" alt="Roger Deakins" class="film-image w-full h-64 object-cover rounded-lg shadow-lg">
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-lg p-8 text-center">
+                        <blockquote class="text-white text-2xl font-light italic mb-4">
+                            "Cinema is a matter of what's in the frame and what's out."
+                        </blockquote>
+                        <p class="text-blue-100 text-lg">— Martin Scorsese</p>
+                        <p class="text-white text-lg font-medium mt-6">Let's build cinematic dreams together, one frame at a time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Production Stages Page -->
+            <div id="page-production-stages" class="page-content hidden">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Film Production Stages</h2>
+                    </div>					
+                    <div class="space-y-12">
+					
+						<!-- Pre-production -->
+						<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+							<div class="bg-white rounded-lg shadow-lg p-8">
+								<div class="flex items-center mb-6">
+									<div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+										<span class="text-white font-bold text-xl">1</span>
+									</div>
+									<h3 class="text-2xl font-bold text-blue-600">Pre-production</h3>
+								</div>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									Pre-production is the foundation of every successful film, where creative vision transforms into actionable plans. This crucial phase encompasses script development and refinement, detailed storyboarding to visualize every scene, casting the perfect actors for each role, and comprehensive technical preparations.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									During this stage, the production team scouts locations, designs sets and costumes, creates shooting schedules, and establishes budgets.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed">
+									Every department head collaborates to ensure that when cameras roll, everyone knows exactly what needs to be accomplished, how it will be achieved, and what resources are required.
+								</p>
+							</div>
+							<div class="space-y-4">
+                                <img src="images/pre-production.jpg" alt="Pre-production" class="film-image w-full h-56 object-cover rounded-lg shadow-lg">
+                                <img src="images/art-department-featured.jpg" alt="Art Department" class="film-image w-full h-64 object-cover rounded-lg shadow-lg">
+                            </div>
+						</div>
+						
+						<!-- Production -->
+						<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+							<div class="bg-white rounded-lg shadow-lg p-8">
+								<div class="flex items-center mb-6">
+									<div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+										<span class="text-white font-bold text-xl">2</span>
+									</div>
+									<h3 class="text-2xl font-bold text-red-600">Production</h3>
+								</div>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									Production is where all the pre-production planning comes to life through the actual filming process. This intense phase involves capturing all the footage needed to tell the story, with the director guiding performances while multiple departments work simultaneously to create each shot.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									The camera department frames and records the visual elements, the sound team captures dialogue and ambient audio, lighting specialists craft the mood and atmosphere, and the art department ensures every visual detail supports the story.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed">
+									On-set coordination is critical, as dozens of crew members must work in perfect harmony to maximize productivity while maintaining creative quality under tight time constraints.
+								</p>
+							</div>							
+							<div class="space-y-4">
+                                <img src="images/behind-the-scenes-film-crew-team-shooting.png" alt="Film crew shooting" class="film-image w-full h-56 object-cover rounded-lg shadow-lg">
+                                <img src="images/crew-and-behind-the-scenes-resource-guide-natricia-bernard-crop.jpg" alt="RED camera" class="film-image w-full h-64 object-cover rounded-lg shadow-lg">
+                            </div>
+						</div>
+						
+						<!-- Post-production -->
+						<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+							<div class="bg-white rounded-lg shadow-lg p-8">
+								<div class="flex items-center mb-6">
+									<div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+										<span class="text-white font-bold text-xl">3</span>
+									</div>
+									<h3 class="text-2xl font-bold text-green-600">Post-production</h3>
+								</div>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									Post-production is where the raw footage transforms into a finished film through meticulous editing, sound design, and visual enhancement. This phase begins with the editor assembling the best takes into a coherent narrative, followed by sound mixing to create the perfect audio landscape, visual effects integration to enhance or create impossible shots, and color grading to establish the final visual tone.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed mb-4">
+									 The composer creates the musical score, sound designers craft the sonic environment, and various specialists ensure technical standards for final delivery.
+								</p>
+								<p class="text-gray-700 text-lg leading-relaxed">
+									Post-production can take months or even years, as it's where the film truly comes together as a complete artistic and technical achievement ready for audiences.
+								</p>
+							</div>
+							<div class="space-y-4">
+                                <img src="images/colorists.jpg" alt="Color grading" class="film-image w-full h-64 object-cover rounded-lg shadow-lg">
+                                <img src="images/african-american-videographer.jpg" alt="Video editing" class="film-image w-full h-64 object-cover rounded-lg shadow-lg">
+                            </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+					
+            <!-- Film Roles Page -->
+            <div id="page-film-roles" class="page-content hidden">
+                <div class="max-w-6xl mx-auto">
+					<div class="text-center mb-8">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Film Production Roles & Departments</h2>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-8">Explore the comprehensive breakdown of every role involved in professional film production, organized by department. Click on any role to learn more about their specific responsibilities.</p>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Director's Team -->
+                        <div class="department-directing bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-blue-700 mb-4"><i class="fas fa-bullhorn mr-2"></i>Director's Team</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/director/director.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Director</a>
+								<a href="film-roles/1st-assistant-director/1st-assistant-director.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">1st Assistant Director</a>
+								<a href="film-roles/2nd-assistant-director/2nd-assistant-director.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">2nd Assistant Director</a>
+								<a href="film-roles/script-supervisor/script-supervisor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Script Supervisor</a>
+								<a href="film-roles/storyboard-artist/storyboard-artist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Storyboard Artist</a>
+                            </div>
+                        </div>
+
+                        <!-- Camera Department -->
+                        <div class="department-camera bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-red-600 mb-4"><i class="fas fa-camera mr-2"></i>Camera Department</h3>
+                            <div class="space-y-2">
+                                <a href="#" onclick="openRole('1st Assistant Camera')" class="role-link block px-4 py-2 rounded hover:bg-gray-100">1st Assistant Camera (Focus Puller)</a>
+								
+								<a href="film-roles/2nd-assistant-camera/2nd-assistant-camera.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">2nd Assistant Camera (Clapper Loader)</a>
+								<a href="film-roles/camera-operator/camera-operator.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Camera Operator</a>
+								<a href="film-roles/camera-utility/camera-utility.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Camera Utility</a>
+								<a href="film-roles/director-of-photography/director-of-photography.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Director of Photography</a>
+                            </div>
+                        </div>
+
+                        <!-- Sound Department -->
+                        <div class="department-sound bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-yellow-500 mb-4"><i class="fas fa-volume-up mr-2"></i>Sound Department</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/boom-operator/boom-operator.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Boom Operator</a>
+								<a href="film-roles/re-recording-mixer/re-recording-mixer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Re-recording Mixer</a>
+								<a href="film-roles/sound-designer/sound-designer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Sound Designer</a>
+								<a href="film-roles/sound-effects-designer/sound-effects-designer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Sound Effects Designer</a>
+								<a href="film-roles/sound-mixer/sound-mixer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Sound Mixer</a>
+								<a href="film-roles/sound-technician/sound-technician.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Sound Technician</a>
+                            </div>
+                        </div>
+						
+						<!-- Art Department -->
+                        <div class="department-art bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-purple-600 mb-4"><i class="fas fa-paint-brush mr-2"></i>Art Department</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/art-director/art-director.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Art Director</a>
+								<a href="film-roles/concept-artist/concept-artist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Concept Artist</a>
+								<a href="film-roles/production-designer/production-designer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Production Designer</a>
+								<a href="film-roles/prop-master/prop-master.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Prop Master</a>
+								<a href="film-roles/set-decorator/set-decorator.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Set Decorator</a>
+								<a href="film-roles/set-dresser/set-dresser.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Set Dresser</a>
+                            </div>
+                        </div>
+
+                        <!-- Music Department -->
+                        <div class="department-music bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-green-700 mb-4"><i class="fas fa-music mr-2"></i>Music Department</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/composer/composer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Composer</a>
+								<a href="film-roles/music-editor/music-editor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Music Editor</a>
+                            </div>
+                        </div>
+
+                        <!-- Costume and Make-up -->
+                        <div class="department-costume bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-pink-700 mb-4"><i class="fas fa-tshirt mr-2"></i>Costume and Make-up</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/costume-designer/costume-designer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Costume Designer</a>
+								<a href="film-roles/hair-stylist/hair-stylist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Hair Stylist</a>
+								<a href="film-roles/make-up-artist/make-up-artist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Make-up Artist</a>
+                            </div>
+                        </div>
+
+                        <!-- Lighting Department -->
+                        <div class="department-lighting bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold mb-4" style="color: #ea580c;"><i class="fas fa-lightbulb mr-2"></i>Lighting Department</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/best-boy/best-boy.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Best Boy</a>
+								<a href="film-roles/cable-person/cable-person.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Cable Person</a>
+								<a href="film-roles/gaffer/gaffer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Gaffer</a>
+								<a href="film-roles/lighting-technician/lighting-technician.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Lighting Technician</a>
+                            </div>
+                        </div>
+
+                        <!-- Editing Team -->
+                        <div class="department-editing bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-black mb-4"><i class="fas fa-cut mr-2"></i>Editing Team</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/colorist/colorist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Colorist</a>
+								<a href="film-roles/editor/editor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Editor</a>
+								<a href="film-roles/motion-graphics-designer/motion-graphics-designer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Motion Graphics Designer</a>
+								<a href="film-roles/visual-effects-artist/visual-effects-artist.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Visual Effects Artist</a>
+                            </div>
+                        </div>
+
+						<!-- Cast & Performance -->
+                        <div class="department-cast bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-green-500 mb-4"><i class="fas fa-theater-masks mr-2"></i>Cast & Performance</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/actor/actor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Actor</a>
+								<a href="film-roles/background-actor/background-actor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Background Actor</a>
+                                <a href="#" onclick="openRole('Casting Director')" class="role-link block px-4 py-2 rounded hover:bg-gray-100">Casting Director</a>
+								<a href="film-roles/precision-driver/precision-driver.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Precision Driver</a>
+                            </div>
+                        </div>
+						
+						<!-- BTS Camera Unit -->
+                        <div class="department-bts bg-white rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-bold mb-4" style="color: #92400e;"><i class="fas fa-video mr-2"></i>BTS Camera Unit</h3>
+                            <div class="space-y-2">
+								<a href="film-roles/bts-director/bts-director.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">BTS Director</a>
+								<a href="film-roles/bts-editor/bts-editor.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">BTS Editor</a>
+								<a href="film-roles/bts-interviewer/bts-interviewer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">BTS Interviewer</a>
+								<a href="film-roles/bts-photographer/bts-photographer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">BTS Photographer</a>
+								<a href="film-roles/bts-videographer/bts-videographer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">BTS Videographer</a>
+                            </div>
+                        </div>
+
+                        <!-- Production Support -->
+                        <div class="department-support bg-white rounded-lg shadow-lg p-6 lg:col-span-2">
+                            <h3 class="text-xl font-bold text-gray-600 mb-4"><i class="fas fa-users mr-2"></i>Production Support</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+								<a href="film-roles/covid-safety-officer/covid-safety-officer.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">COVID Safety Officer</a>
+								<a href="film-roles/production-assistant/production-assistant.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Production Assistant</a>
+								<a href="film-roles/production-driver/production-driver.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Production Driver</a>
+								<a href="film-roles/production-manager/production-manager.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Production Manager</a>
+								<a href="film-roles/snack-distribution-manager/snack-distribution-manager.html" class="role-link block px-4 py-2 rounded hover:bg-gray-100" target="_blank">Snack Distribution Manager</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Movie Subpages -->
+            <div id="page-film-plot" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Film Plot</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-800 text-2xl mb-6"><b>A Whole Blank Hole</b> <i>[working title]</i></p>
+						<p class="text-gray-800 mb-5">At a prestigious international school in China, four final-year students – a farmer’s son, a competitive athlete, an aspiring singer, and a book-loving girl – are desperate to apply to universities abroad. But one thing stands in their way: the nightmare of IB documentation. Forms, spreadsheets, evaluation grids – all written in a language no one fully understands.</p>
+						<p class="text-gray-800 mb-5">Their teachers, though fluent in "IB-speak," do not provide direct help – citing the importance of agency and independent problem-solving. Apparently, students must learn to figure things out on their own.</p>
+						<p class="text-gray-800 mb-5">Frustrated but determined, the group hears whispers of a legendary figure – a hermit, said to possess true understanding of the IB. One of them encounters this mysterious man and receives a strange object tied to the world of IB. Could this be… the IB Guru?</p>
+						<p class="text-gray-800 mb-5">The four set out to find him.<br/>They eventually track him down in a forest, attend his cryptic outdoor “lessons,” and become his eager followers. He even begins speaking publicly about the secrets of IB, drawing growing crowds.</p>
+						<p class="text-gray-800 mb-5">But one day, a rival school’s minivan suddenly screeches to a halt – the Guru is grabbed and kidnapped. The captors tie him to a chair and begin "torturing" him: deleting IB files from his laptop, corrupting spreadsheets, even installing Linux (which, of course, doesn’t support ManageBac).</p>
+						<p class="text-gray-800 mb-5">The Guru resists – until he finally breaks. He confesses that he is not a true master, but a fraud who simply repeated knowledge passed down by someone else: a mysterious child genius known only as… The IB Kid.</p>
+						<p class="text-gray-800 mb-5">Determined to uncover the truth, the students examine an old photo, spot a familiar object, and realize:<br/>the IB Kid is a quiet little girl in their own school.<br/>When they confront her, she smiles and says calmly,<br/><i>"Yes. But you had to find me yourselves. That’s how we build agency."</i></p>
+						<p class="text-gray-800 mb-5">Unlike the others, though, she then provides real help.<br/>She teaches them to decode the IB language and shows them how to truly understand the system.<br/>At last, the students begin to master what once felt impossible.</p>
+						<p class="text-gray-800 mb-5">Eventually, we see our heroes in joyful, clumsy, funny moments on different university campuses around the world – confident, transformed, and ready for anything.</p>
+						<p class="text-gray-800 mb-5"><b>The End.</b></p>
+                        <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4">Share Your Ideas</h3>
+                            <p class="text-gray-700">Your director, Mr. Chris, truly values your creativity! If you have ideas for dramatic moments, funny scenes, or exciting twists, feel free to share them. Your ideas can help shape our film and make it even more unique and fun for everyone!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-movie-script" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Movie Script</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg"><i>[under development]</i></p>
+                        <div class="mt-8 p-6 bg-green-50 rounded-lg">
+                            <h3 class="text-xl font-semibold text-green-600 mb-4">Script Development</h3>
+                            <p class="text-gray-700">The complete script, including scene breakdowns and character dialogue, will be available here as soon as it's done.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-storyboards" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Storyboards</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg">Pre-visualization of our film through storyboard sequences.</p>
+                        <div class="mt-8 p-6 bg-purple-50 rounded-lg">
+                            <h3 class="text-xl font-semibold text-purple-600 mb-4">Visual Planning</h3>
+                            <p class="text-gray-700">Our storyboard artists are creating detailed visual guides for every scene. These boards will show camera angles, character positioning, and key visual elements that will guide our production process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-shotlists" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Shotlists</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg">Comprehensive technical breakdown of every shot planned for production.</p>
+                        <div class="mt-8 p-6 bg-yellow-100 rounded-lg">
+                            <h3 class="text-xl font-semibold text-orange-600 mb-4">Technical Planning</h3>
+                            <p class="text-gray-700">Detailed shotlists - including shot descriptions, subjects of shots, camera specifications, location and timing for each planned shot - will be documented here for our production team's reference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-shooting-info" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Shooting Information</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg">Production schedules, call sheets, and logistics information for our film shoot.</p>
+                        <div class="mt-8 p-6 bg-red-50 rounded-lg">
+                            <h3 class="text-xl font-semibold text-red-600 mb-4">Production Logistics</h3>
+                            <p class="text-gray-700">Shooting schedules, location details, equipment lists, and crew call times will be organized here to ensure smooth production operations for all team members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q&A Page -->
+            <div id="page-qa" class="page-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Questions & Answers</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg mb-6">Common questions about our film production roles and processes.</p>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">How do I choose which film role is right for me?</h3>
+                                <p class="text-gray-700">Consider your interests, skills, and personality. Technical roles require attention to detail, creative roles need artistic vision, and leadership roles demand strong communication skills. Feel free to browse the Film Roles section, where you can explore learning materials for each role and discover what fits you best.</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">I've checked a ton of film roles, but I'm still uncertain about what to choose.<br/>Can the teacher help?</h3>
+                                <p class="text-gray-700">The teacher not only can help — he absolutely will! If you're unsure about which film role to choose,<br/>Mr. Chris will personally assign you to a task, carefully considering your talents and personality to make sure you find the best fit.</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">I'd like to do more than one thing during this filmmaking project.<br/>Can I work in multiple departments?</h3>
+                                <p class="text-gray-700">Absolutely! Working in multiple departments — or taking on several roles within the same department — is not only allowed, but strongly recommended and encouraged. In our situation, where we don’t have 1,000 people to make a film but maybe just 50, stepping into multiple roles is almost a necessity. Your extra contributions will help push our film toward success. Plus, all the knowledge and experience you gain will make you even more valuable and support your opportunities in the future.</p>
+                            </div>
+							<div class="border-l-4 border-red-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Can I take on a role together with my classmate, or does each role have to be filled by only one person?</h3>
+                                <p class="text-gray-700">Collaboration is highly encouraged! The teacher is happy if you learn and work together on the same role. However, please keep in mind that you might also be assigned additional roles at the same time, since our team is limited in size.</p>
+                            </div>
+							<div class="border-l-4 border-purple-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">I chose a filmmaking role I love. So that means I’ll definitely get that role, right?</h3>
+                                <p class="text-gray-700">While the teacher will absolutely do his best to let you work in the role you love most, our team size is limited. This means you might be assigned to a different role than the one you first chose, or you might need to take on additional roles beyond your original choice. We can’t have everyone as a Hair Stylist while there’s nobody to hold the camera. :)</p>
+                            </div>
+							<div class="border-l-4 border-green-400 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">I like watching you guys make a movie, but I'd rather just stand on the sidelines<br/>and not get in your way. Is that okay?</h3>
+                                <p class="text-gray-700">This filmmaking project is an official part of your drama curriculum this year, and just like in any class, active participation is expected from every student. If you can’t decide on a role for yourself, don’t worry — your teacher will help you find a suitable one that matches your skills and personality.</p>
+                            </div>
+							<div class="border-l-4 border-pink-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">How can we shoot a full movie in our limited time frame, like 80 minutes per week?</h3>
+                                <p class="text-gray-700">I have some bad news: you're right. We can’t. Yes, there will be lucky days when we can record scenes relatively quickly, but sometimes we’ll need several hours in a row to shoot properly. So, dear students, we can only make this happen and finish our movie successfully if we’re willing to go the extra mile together. Are you up for it? :)</p>
+                            </div>
+							<div class="border-l-4 border-gray-500 pl-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">There is a shooting scheduled for today, but I don't feel like participating.<br/>Is that okay?</h3>
+                                <p class="text-gray-700">Each filmmaking role comes with real responsibility. If one person is missing — or even if they show up without the needed equipment — it can stop the entire shoot and waste everyone’s time and effort. It is important not to let your team down. Once you commit to or are assigned to a role, your classmates and the whole production rely on you to be there and be prepared. Being part of a film team means showing up for each other, even on days when it feels tough.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Gallery Page -->
+            <div id="page-gallery" class="page-content hidden">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">Student Gallery</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <p class="text-gray-600 text-lg mb-8">Showcase of student work, behind-the-scenes photos, and project highlights.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="bg-gray-100 rounded-lg p-6 text-center">
+                                <i class="fas fa-camera text-4xl text-gray-400 mb-4"></i>
+                                <h3 class="font-semibold text-gray-700">Production Photos</h3>
+                                <p class="text-gray-500 text-sm mt-2">Behind-the-scenes photography from our student productions</p>
+                            </div>
+                            <div class="bg-gray-100 rounded-lg p-6 text-center">
+                                <i class="fas fa-video text-4xl text-gray-400 mb-4"></i>
+                                <h3 class="font-semibold text-gray-700">Student Films</h3>
+                                <p class="text-gray-500 text-sm mt-2">Completed student projects and work-in-progress reels</p>
+                            </div>
+                            <div class="bg-gray-100 rounded-lg p-6 text-center">
+                                <i class="fas fa-award text-4xl text-gray-400 mb-4"></i>
+                                <h3 class="font-semibold text-gray-700">Achievements</h3>
+                                <p class="text-gray-500 text-sm mt-2">Student awards, festival selections, and recognitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Role Detail Modal -->
+    <div id="roleModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-96 overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 id="roleTitle" class="text-2xl font-bold text-gray-800"></h3>
+                    <button onclick="closeRoleModal()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div id="roleContent" class="text-gray-700">
+                    <p>This is a placeholder for detailed role information. In a complete implementation, this would contain comprehensive details about the selected role's responsibilities, requirements, and career path information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- Logo Modal -->
+	<div id="logoModal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50" onclick="closeLogoModal()">
+		<img src="images/TFA-logo.png" alt="Tongwen Film Academy logo" class="max-h-[80vh] mx-4 rounded-lg shadow-xl">
+	</div>
+
+
+    <script>
+		// TFA logo
+		function openLogoModal() {
+			document.getElementById('logoModal').classList.remove('hidden');
+		}
+
+		function closeLogoModal() {
+			document.getElementById('logoModal').classList.add('hidden');
+		}
+		
+		document.addEventListener('keydown', function(event) {
+			if (event.key === 'Escape') {
+				closeLogoModal();
+			}
+		});
+
+        // Page navigation
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.add('hidden'));
+            
+            // Show selected page
+            document.getElementById('page-' + pageId).classList.remove('hidden');
+            
+            // Update menu active states
+            const menuItems = document.querySelectorAll('nav button');
+            menuItems.forEach(item => item.classList.remove('active-menu'));
+            
+            // Handle submenu active states
+            const submenuItems = document.querySelectorAll('#movie-submenu button');
+            submenuItems.forEach(item => item.classList.remove('submenu-active'));
+            
+            // Set active menu item
+            if (pageId === 'film-plot' || pageId === 'movie-script' || pageId === 'storyboards' || pageId === 'shotlists' || pageId === 'shooting-info') {
+                document.getElementById('menu-movie').classList.add('active-menu');
+                document.getElementById('submenu-' + pageId.replace('film-', '').replace('movie-', '').replace('shooting-info', 'shooting')).classList.add('submenu-active');
+                // Show submenu
+                document.getElementById('movie-submenu').classList.remove('hidden');
+                document.getElementById('movie-chevron').style.transform = 'rotate(180deg)';
+            } else {
+                const menuMap = {
+                    'main': 'menu-main',
+                    'production-stages': 'menu-production',
+                    'film-roles': 'menu-roles',
+                    'qa': 'menu-qa',
+                    'gallery': 'menu-gallery'
+                };
+                if (menuMap[pageId]) {
+                    document.getElementById(menuMap[pageId]).classList.add('active-menu');
+                }
+            }
+        }
+
+        // Toggle Our Movie submenu
+        function toggleOurMovie() {
+            const submenu = document.getElementById('movie-submenu');
+            const chevron = document.getElementById('movie-chevron');
+            
+            if (submenu.classList.contains('hidden')) {
+                submenu.classList.remove('hidden');
+                chevron.style.transform = 'rotate(180deg)';
+                // Auto-show Film Plot and highlight it
+                showPage('film-plot');
+            } else {
+                submenu.classList.add('hidden');
+                chevron.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Role modal functions
+        /* function openRole(roleName) {
+            document.getElementById('roleTitle').textContent = roleName;
+            document.getElementById('roleModal').classList.remove('hidden');
+            document.getElementById('roleModal').classList.add('flex');
+        }
+
+        function closeRoleModal() {
+            document.getElementById('roleModal').classList.add('hidden');
+            document.getElementById('roleModal').classList.remove('flex');
+        } */
+		const roleContents = {
+			'1st Assistant Camera': 'For now, we don’t use a 1st Assistant Camera (1st AC) because we don’t have a focus puller. We’re using simpler camera setups, so we don’t need someone to constantly adjust focus or manage complex camera systems. This role is very important in big films, but here we keep it simple.',
+			'Casting Director': 'For now, we don’t use a separate Casting Director because Mr. Chris (your drama teacher and film director) will personally select the actors, carefully considering each student’s talents and personality.',
+			// and so on
+		};
+		
+		function openRole(roleName) {
+			document.getElementById('roleTitle').textContent = roleName;
+		
+			if (roleContents[roleName]) {
+				document.getElementById('roleContent').innerHTML = `<p>${roleContents[roleName]}</p>`;
+			} else {
+				document.getElementById('roleContent').innerHTML = `<p>This is a placeholder for detailed role information. In a complete implementation, this would contain comprehensive details about the selected role's responsibilities, requirements, and career path information.</p>`;
+			}
+		
+			document.getElementById('roleModal').classList.remove('hidden');
+			document.getElementById('roleModal').classList.add('flex');
+		}
+
+		function closeRoleModal() {
+			document.getElementById('roleModal').classList.add('hidden');
+			document.getElementById('roleModal').classList.remove('flex');
+		}
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('main');
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('roleModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeRoleModal();
+            }
+        });
+    </script>
+</body>
+</html>

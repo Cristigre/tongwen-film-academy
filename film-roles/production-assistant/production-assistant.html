@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<!https://fznlglyj.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Production Assistant: Your Gateway to Film Success</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .skill-item::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-bottom: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+        .hierarchy-node {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            min-width: 120px;
+        }
+        .hierarchy-line {
+            position: absolute;
+            background: #9ca3af;
+        }
+        .interactive-checklist input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 0.5rem;
+        }
+        .interactive-checklist input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #6b7280;
+        }
+        .radio-code {
+            background: #1f2937;
+            color: #10b981;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+            margin: 0.25rem 0;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-6">The Production Assistant</h1>
+            <p class="text-2xl mb-8 opacity-90">Your Gateway to Film Success</p>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg mb-8 leading-relaxed">
+                    Production Assistants are the backbone of every successful film set. They're not just "helpers" — 
+                    they're essential connectors, future leaders, and the vital link that keeps productions running smoothly. 
+                    This role builds foundational skills that launch incredible film careers.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-headset mr-2"></i>Communication Hub
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-users mr-2"></i>Team Coordination
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-clipboard-list mr-2"></i>Set Organization
+                    </span>
+                    <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                        <i class="fas fa-shield-alt mr-2"></i>Safety First
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What Does a PA Do Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Does a PA Do?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Production Assistants wear many hats and adapt to whatever the production needs. 
+                    They're the Swiss Army knife of film sets!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Radio Communications</h3>
+                    <p class="text-gray-700 text-center">Manage walkie-talkie communications, relay messages between departments, and maintain the information flow that keeps everyone connected.</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Talent Coordination</h3>
+                    <p class="text-gray-700 text-center">Guide actors to their marks, assist with wardrobe and makeup timing, and ensure talent is where they need to be, when they need to be there.</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-lock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Set Security</h3>
+                    <p class="text-gray-700 text-center">Lock up sets during takes, manage crowd control, post signage, and ensure unauthorized personnel don't disrupt filming.</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-clipboard-list text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Paperwork & Distribution</h3>
+                    <p class="text-gray-700 text-center">Distribute call sheets, collect timecards, manage release forms, and handle the crucial administrative tasks that keep production legal and organized.</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-running text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">General Errands</h3>
+                    <p class="text-gray-700 text-center">Coffee runs, equipment transport, location scouting assistance, and whatever unexpected needs arise during the production day.</p>
+                </div>
+
+                <div class="card-hover bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl">
+                    <div class="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Department Support</h3>
+                    <p class="text-gray-700 text-center">Assist camera, sound, lighting, and other departments with setup, equipment management, and specialized tasks as needed.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-center mb-6">PA in Action</h3>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://www.beyondfilmschool.com/wp-content/uploads/2022/05/PXL_20220426_160646900-scaled-e1653957305167.jpg" 
+                             alt="Production Assistant with equipment on film set" 
+                             class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">The Multi-Tool Professional</h4>
+                        <p class="text-gray-700 mb-4">
+                            A PA's toolkit includes everything from headsets and radios to clipboards and emergency supplies. 
+                            They're always prepared for whatever the day might throw at them.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="skill-item">Always carry extra batteries and backup equipment</div>
+                            <div class="skill-item">Maintain clear communication protocols</div>
+                            <div class="skill-item">Stay flexible and adapt to changing needs</div>
+                            <div class="skill-item">Anticipate problems before they happen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supporting Departments Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Supporting the Set and Departments</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    PAs are the connective tissue between all departments, ensuring smooth collaboration and communication across the entire production.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Department Integration</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-camera text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Camera Department</h4>
+                                <p class="text-gray-600">Assist with equipment setup, lens changes, and maintaining clear sightlines during shots.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-volume-up text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Sound Department</h4>
+                                <p class="text-gray-600">Help manage background noise, coordinate with boom operators, and ensure quiet during recording.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-lightbulb text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Lighting Department</h4>
+                                <p class="text-gray-600">Assist with equipment positioning, cable management, and maintaining consistent lighting setups.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tshirt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Wardrobe & Makeup</h4>
+                                <p class="text-gray-600">Coordinate talent schedules, manage costume continuity, and ensure timely touch-ups between takes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://thumbs.dreamstime.com/b/female-director-working-set-wearing-headset-waist-up-portrait-adult-women-as-production-assistant-working-set-316208618.jpg" 
+                         alt="Female production assistant working on set with headset" 
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-center mb-8">Call Sheet Management</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Daily Coordination Hub</h4>
+                        <p class="text-gray-700 mb-4">
+                            Call sheets are the roadmap for each shooting day. PAs distribute these crucial documents and ensure everyone 
+                            has the information they need to stay synchronized.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="skill-item">Distribute updated call sheets to all departments</li>
+                            <li class="skill-item">Verify contact information and arrival times</li>
+                            <li class="skill-item">Coordinate with transportation and catering</li>
+                            <li class="skill-item">Track changes and communicate updates in real-time</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://fsufilmhandbook.com/wp-content/uploads/2024/01/Call-Sheet_2024.jpg" 
+                             alt="Professional film call sheet example" 
+                             class="rounded-lg shadow-md w-full max-h-96 object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Skills Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Essential Skills and Communication</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Success as a PA requires a unique blend of technical knowledge, interpersonal skills, and adaptability.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-center">Communication Skills</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">Clear, concise radio communication</div>
+                        <div class="skill-item">Active listening and message relay</div>
+                        <div class="skill-item">Professional phone and email etiquette</div>
+                        <div class="skill-item">Conflict resolution and diplomacy</div>
+                        <div class="skill-item">Multilingual capabilities (bonus)</div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-center">Technical Abilities</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">Radio and headset operation</div>
+                        <div class="skill-item">Basic equipment handling</div>
+                        <div class="skill-item">Digital documentation skills</div>
+                        <div class="skill-item">Time management and scheduling</div>
+                        <div class="skill-item">Safety protocol knowledge</div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-center">Personal Qualities</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">Adaptability and flexibility</div>
+                        <div class="skill-item">High energy and endurance</div>
+                        <div class="skill-item">Attention to detail</div>
+                        <div class="skill-item">Team collaboration</div>
+                        <div class="skill-item">Problem-solving mindset</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 text-white p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-center mb-8">Radio Communication Essentials</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Common Radio Codes</h4>
+                        <div class="space-y-2">
+                            <div class="radio-code">"Copy" - I understand</div>
+                            <div class="radio-code">"Stand by" - Wait for further instruction</div>
+                            <div class="radio-code">"Go ahead" - Proceed with your message</div>
+                            <div class="radio-code">"10-4" - Acknowledged/Understood</div>
+                            <div class="radio-code">"What's your 20?" - What's your location?</div>
+                            <div class="radio-code">"Hot set" - Filming in progress, stay quiet</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Radio Etiquette</h4>
+                        <ul class="space-y-2">
+                            <li class="skill-item text-white">Always identify yourself when speaking</li>
+                            <li class="skill-item text-white">Keep messages brief and clear</li>
+                            <li class="skill-item text-white">Wait for a response before continuing</li>
+                            <li class="skill-item text-white">Use "over" when finished speaking</li>
+                            <li class="skill-item text-white">Switch to private channels for sensitive info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- On-Set Etiquette and Safety Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">On-Set Etiquette and Safety</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Understanding set culture and safety protocols is crucial for every PA. 
+                    Your professionalism and safety awareness protect both the production and your career.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Golden Rules of Set Etiquette</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
+                            <div>
+                                <h4 class="font-semibold">Silence During Takes</h4>
+                                <p class="text-gray-600">When cameras roll, all non-essential conversation stops. No exceptions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
+                            <div>
+                                <h4 class="font-semibold">Never Cross the Line</h4>
+                                <p class="text-gray-600">Don't walk through shots or cross between camera and subject during filming.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
+                            <div>
+                                <h4 class="font-semibold">Chain of Command</h4>
+                                <p class="text-gray-600">Always go through proper channels. Report to your immediate supervisor first.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">4</div>
+                            <div>
+                                <h4 class="font-semibold">Stay Alert and Available</h4>
+                                <p class="text-gray-600">Keep phones on silent, stay visible, and be ready to assist at a moment's notice.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">5</div>
+                            <div>
+                                <h4 class="font-semibold">Dress Professionally</h4>
+                                <p class="text-gray-600">Wear comfortable, appropriate clothing in dark colors. Avoid logos and distracting patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Safety First</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-hard-hat text-yellow-500 text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">PPE Awareness</h4>
+                                    <p class="text-gray-600">Know when and where personal protective equipment is required.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-exclamation-triangle text-red-500 text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Hazard Recognition</h4>
+                                    <p class="text-gray-600">Identify and report potential safety hazards immediately.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-first-aid text-green-500 text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Emergency Procedures</h4>
+                                    <p class="text-gray-600">Know emergency contacts, evacuation routes, and first aid protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://m.media-amazon.com/images/I/61ofE0r7vFL._UF894,1000_QL80_.jpg" 
+                             alt="Quiet Please Filming In Progress sign" 
+                             class="rounded-lg shadow-md w-full h-32 object-cover">
+                        <img src="https://wilcoxsound.com/wp-content/uploads/2018/01/FSM-QuietPlease-6.jpg" 
+                             alt="Collapsible filming sign" 
+                             class="rounded-lg shadow-md w-full h-32 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Film Hierarchy Chart Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Film Set Hierarchy</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Understanding the chain of command helps PAs navigate set dynamics and communicate effectively with all departments.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl mb-12">
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://framerusercontent.com/images/4zJI0zqoLfs1JNteeBtvN6dNjo.png" 
+                         alt="Complete film crew hierarchy chart" 
+                         class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-100 p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-crown text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Director</h3>
+                    <p class="text-gray-700">Creative vision and final decision-maker. PAs support the director's needs indirectly through the AD team.</p>
+                </div>
+
+                <div class="bg-green-100 p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bullhorn text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Assistant Directors</h3>
+                    <p class="text-gray-700">Your direct supervisors who manage the set's daily operations and coordinate all departments.</p>
+                </div>
+
+                <div class="bg-purple-100 p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-hands-helping text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Production Assistants</h3>
+                    <p class="text-gray-700">The essential support system that enables all departments to function smoothly and efficiently.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-100 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-center mb-6">PA Reporting Structure</h3>
+                <div class="max-w-2xl mx-auto">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                            <span class="font-semibold">1st Assistant Director</span>
+                            <i class="fas fa-arrow-down text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                            <span class="font-semibold">2nd Assistant Director</span>
+                            <i class="fas fa-arrow-down text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between bg-purple-100 p-4 rounded-lg shadow border-2 border-purple-300">
+                            <span class="font-semibold">Key Production Assistant</span>
+                            <i class="fas fa-arrow-down text-gray-400"></i>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg shadow">
+                            <span class="font-semibold">Additional Production Assistants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Resources Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Learn from the Pros</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Watch these essential videos to get insider perspectives on the PA role and learn from experienced professionals.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/UPBfoEFgR28" 
+                                title="A Day in the Life of a Production Assistant" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">A Day in the Life of a PA</h3>
+                        <p class="text-gray-600 mb-4">RocketJump Film School takes you through a complete day as a Production Assistant, showing the reality of the role.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i>395K views
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-clock mr-2"></i>12:19
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/0ObVv_Q9jiI" 
+                                title="Production Assistant Handbook | Win Your First Day on Set" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Win Your First Day on Set</h3>
+                        <p class="text-gray-600 mb-4">Essential handbook for new PAs covering everything you need to know for your first day on a professional film set.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i>33K views
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-clock mr-2"></i>16:39
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/pgwlkgq1i_U" 
+                                title="A Day in the Life of a PA on the Set of Bridgerton" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PA on Bridgerton Set</h3>
+                        <p class="text-gray-600 mb-4">Go behind the scenes with a Cast Production Assistant on the hit Netflix series Bridgerton.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-eye mr-2"></i>16K views
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-clock mr-2"></i>7:19
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/FVDwUoFv2xg" 
+                                title="8 Things You Need as a Film Set Production Assistant" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Essential PA Kit</h3>
+                        <p class="text-gray-600">Learn what equipment and tools every prepared PA should carry on set.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/PYkuFTEVB1E" 
+                                title="Top Tips for 1st time Set PAs" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">First-Time PA Tips</h3>
+                        <p class="text-gray-600">Crash course tips for first-time Production Assistants to succeed on their debut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Worksheet Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Interactive PA Training Tools</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Practice with our interactive worksheets and checklists to build your confidence and skills before stepping onto your first set.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Daily PA Checklist</h3>
+                    <div class="interactive-checklist space-y-3">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check1" class="mr-3">
+                            <label for="check1" class="cursor-pointer">Arrive early and check in with 2nd AD</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check2" class="mr-3">
+                            <label for="check2" class="cursor-pointer">Test radio and headset equipment</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check3" class="mr-3">
+                            <label for="check3" class="cursor-pointer">Review daily call sheet and shooting schedule</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check4" class="mr-3">
+                            <label for="check4" class="cursor-pointer">Distribute updated call sheets to departments</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check5" class="mr-3">
+                            <label for="check5" class="cursor-pointer">Set up signage for set security</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check6" class="mr-3">
+                            <label for="check6" class="cursor-pointer">Coordinate with talent transport/timing</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check7" class="mr-3">
+                            <label for="check7" class="cursor-pointer">Monitor radio for department requests</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check8" class="mr-3">
+                            <label for="check8" class="cursor-pointer">Assist with meal coordination</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check9" class="mr-3">
+                            <label for="check9" class="cursor-pointer">Collect and organize daily paperwork</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="check10" class="mr-3">
+                            <label for="check10" class="cursor-pointer">Complete wrap duties and equipment return</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-center">Radio Protocol Practice</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <h4 class="font-semibold mb-2">Scenario 1: Director wants coffee</h4>
+                                <p class="text-sm text-gray-600 mb-2">Your Response:</p>
+                                <div class="radio-code text-sm">"Copy, I'll coordinate with craft services and have that to you in 5 minutes."</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <h4 class="font-semibold mb-2">Scenario 2: Talent is running late</h4>
+                                <p class="text-sm text-gray-600 mb-2">Your Action:</p>
+                                <div class="radio-code text-sm">"2nd AD, talent ETA is now 10:30. Should I notify wardrobe and makeup?"</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <h4 class="font-semibold mb-2">Scenario 3: Unauthorized person on set</h4>
+                                <p class="text-sm text-gray-600 mb-2">Your Response:</p>
+                                <div class="radio-code text-sm">"Key PA, we have an unauthorized person near Video Village. Please advise."</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-center">Essential PA Kit</h3>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="skill-item">Radio & headset</div>
+                            <div class="skill-item">Extra batteries</div>
+                            <div class="skill-item">Multi-tool</div>
+                            <div class="skill-item">Sharpies & pens</div>
+                            <div class="skill-item">Clipboard</div>
+                            <div class="skill-item">Gaffer tape</div>
+                            <div class="skill-item">First aid basics</div>
+                            <div class="skill-item">Flashlight</div>
+                            <div class="skill-item">Phone charger</div>
+                            <div class="skill-item">Snacks & water</div>
+                            <div class="skill-item">Weather protection</div>
+                            <div class="skill-item">Comfortable shoes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-100 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-center mb-6">Downloadable Resources</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow text-center">
+                        <i class="fas fa-file-pdf text-red-500 text-3xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">PA Handbook</h4>
+                        <p class="text-sm text-gray-600 mb-4">Complete guide to PA responsibilities and best practices</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                            Download PDF
+                        </button>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow text-center">
+                        <i class="fas fa-clipboard-list text-green-500 text-3xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">Daily Checklist</h4>
+                        <p class="text-sm text-gray-600 mb-4">Printable checklist for daily PA tasks and responsibilities</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                            Download PDF
+                        </button>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow text-center">
+                        <i class="fas fa-radio text-purple-500 text-3xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">Radio Codes</h4>
+                        <p class="text-sm text-gray-600 mb-4">Quick reference guide for essential radio communications</p>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Resources Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Best Beginner Resources</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Continue your learning journey with these recommended resources for aspiring Production Assistants.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-book text-blue-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Online Courses</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• Film Production Fundamentals</li>
+                        <li>• Set Safety and Protocol Training</li>
+                        <li>• Communication Skills for Film</li>
+                        <li>• Industry Networking Strategies</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-users text-green-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Professional Groups</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• Local Film Commissions</li>
+                        <li>• PA Facebook Groups</li>
+                        <li>• Industry Meetups</li>
+                        <li>• Film Festival Volunteers</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-briefcase text-yellow-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Job Platforms</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• StaffMeUp</li>
+                        <li>• ProductionHUB</li>
+                        <li>• Entertainment Careers</li>
+                        <li>• Local Crew Databases</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-podcast text-purple-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Podcasts</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• The Filmmakers Podcast</li>
+                        <li>• Behind the Curtain</li>
+                        <li>• Set Life Stories</li>
+                        <li>• Industry Insider</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-certificate text-red-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Certifications</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• First Aid/CPR Certification</li>
+                        <li>• Film Safety Training</li>
+                        <li>• Radio Operator License</li>
+                        <li>• Driving Record Verification</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <i class="fas fa-map text-indigo-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Next Steps</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• Build your film resume</li>
+                        <li>• Network with industry pros</li>
+                        <li>• Consider specialization paths</li>
+                        <li>• Set career advancement goals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Your Journey Starts Here</h3>
+                    <p class="text-lg opacity-90 mb-6">
+                        The Production Assistant role is more than just a stepping stone—it's where you'll build the foundation 
+                        for an incredible career in film and television. Every major director, producer, and department head 
+                        started somewhere, and many began as PAs.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 text-lg">
+                        <span class="bg-blue-500 px-6 py-2 rounded-full">Learn</span>
+                        <span class="bg-green-500 px-6 py-2 rounded-full">Connect</span>
+                        <span class="bg-purple-500 px-6 py-2 rounded-full">Grow</span>
+                        <span class="bg-yellow-500 px-6 py-2 rounded-full">Succeed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Ready to Start Your PA Journey?</h3>
+            <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+                Remember: every film set needs great Production Assistants. Your attention to detail, positive attitude, 
+                and willingness to learn will open doors to incredible opportunities in the film industry.
+            </p>
+            <div class="flex justify-center space-x-8 text-4xl mb-8">
+                <i class="fas fa-film text-blue-400"></i>
+                <i class="fas fa-camera text-green-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-trophy text-purple-400"></i>
+            </div>
+            <p class="opacity-75">
+                © 2024 Production Assistant Educational Guide | Empowering Future Filmmakers
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for any anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add click handlers for download buttons
+            document.querySelectorAll('button').forEach(button => {
+                if (button.textContent.includes('Download PDF')) {
+                    button.addEventListener('click', function() {
+                        alert('In a real implementation, this would download the corresponding PDF resource.');
+                    });
+                }
+            });
+
+            // Add some visual feedback for checklist items
+            document.querySelectorAll('.interactive-checklist input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const label = this.nextElementSibling;
+                    if (this.checked) {
+                        label.style.textDecoration = 'line-through';
+                        label.style.color = '#6b7280';
+                        label.style.transition = 'all 0.3s ease';
+                    } else {
+                        label.style.textDecoration = 'none';
+                        label.style.color = 'inherit';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

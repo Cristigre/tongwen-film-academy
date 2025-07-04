@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!https://yidpntul.gensparkspace.com>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Supervisor Guide for Beginner Filmmakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .worksheet-section { background: linear-gradient(145deg, #f8fafc, #e2e8f0); }
+        .icon-circle { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .continuity-error { border: 3px solid #ef4444; }
+        .lined-script { border-left: 4px solid #10b981; padding-left: 1rem; }
+        @media print {
+            .no-print { display: none; }
+            body { -webkit-print-color-adjust: exact; color-adjust: exact; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="icon-circle rounded-full p-4">
+                    <i class="fas fa-clipboard-list text-4xl"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Script Supervisor Guide</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">The unsung heroes of film continuity - Learn everything you need to know about Script Supervisors and their crucial role in filmmaking</p>
+            <div class="flex justify-center space-x-8 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-eye mr-2"></i>
+                    <span>Continuity Tracking</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-stopwatch mr-2"></i>
+                    <span>Scene Timing</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-pen mr-2"></i>
+                    <span>Script Notes</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">What is a Script Supervisor?</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg mb-4">A Script Supervisor (also called Script Continuity Supervisor) is the guardian of a film's consistency. They ensure that every scene flows seamlessly from one shot to the next, tracking details that audiences should never notice.</p>
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h3 class="font-semibold mb-3 text-blue-800">Key Responsibilities:</h3>
+                            <ul class="space-y-2 text-blue-700">
+                                <li class="flex items-start"><i class="fas fa-check-circle mt-1 mr-2"></i> Monitor continuity between shots and scenes</li>
+                                <li class="flex items-start"><i class="fas fa-check-circle mt-1 mr-2"></i> Take detailed script notes and timing</li>
+                                <li class="flex items-start"><i class="fas fa-check-circle mt-1 mr-2"></i> Track props, costumes, and actor positions</li>
+                                <li class="flex items-start"><i class="fas fa-check-circle mt-1 mr-2"></i> Maintain lined scripts and shooting logs</li>
+                                <li class="flex items-start"><i class="fas fa-check-circle mt-1 mr-2"></i> Coordinate with editors and post-production</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.videomaker.com/drpl/articles/18830/359-C10-Andra.Hayes_.On-the-set-of-Star-Trek-Renegades-with-Director-Tim-Russ.psd_.png" alt="Script Supervisor on Star Trek Set" class="rounded-lg shadow-lg w-full">
+                        <p class="text-sm text-gray-600 mt-2 text-center">Script Supervisor working on the set of Star Trek Renegades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Does a Script Supervisor Do? -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">What Does a Script Supervisor Do?</h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
+                    <div class="icon-circle rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-eye text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Continuity Guardian</h3>
+                    <p class="text-gray-600 mb-4">Ensures that props, costumes, makeup, and actor positions remain consistent between different shots and scenes filmed out of sequence.</p>
+                    <img src="https://infocusfilmschool.com/wp-content/uploads/2017/11/scripty_notes-2.png" alt="Script Notes Example" class="rounded w-full">
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
+                    <div class="icon-circle rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-clipboard text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Documentation Master</h3>
+                    <p class="text-gray-600 mb-4">Creates detailed logs of every shot taken, including timing, camera angles, and performance notes for the editing team.</p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/61e8a17cae68793e9fa20bb5/7ee6dba5-40f9-4415-b756-7d40b0441be9/Daily+shooting+log.png" alt="Daily Shooting Log" class="rounded w-full">
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
+                    <div class="icon-circle rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-stopwatch text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Time Keeper</h3>
+                    <p class="text-gray-600 mb-4">Tracks scene timing and pacing to ensure the final film meets its target runtime and maintains proper flow.</p>
+                    <img src="https://www.premiumbeat.com/blog/wp-content/uploads/2019/02/from-movie-slate-dot-com.jpg" alt="Script Supervisor with Stopwatch" class="rounded w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Continuity Is Critical -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Why Continuity Is Critical in Filmmaking</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">When Continuity Goes Wrong</h3>
+                        <p class="text-lg mb-6">Continuity errors can break the illusion of cinema and pull viewers out of the story. Here are some common mistakes that script supervisors prevent:</p>
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="bg-red-100 rounded-full p-2 mr-4 flex-shrink-0">
+                                    <i class="fas fa-exclamation-triangle text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-red-800">Costume Changes</h4>
+                                    <p class="text-gray-600">Actors' clothing or accessories mysteriously appearing or disappearing between shots</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="bg-red-100 rounded-full p-2 mr-4 flex-shrink-0">
+                                    <i class="fas fa-exclamation-triangle text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-red-800">Prop Positioning</h4>
+                                    <p class="text-gray-600">Objects moving or changing between cuts in the same scene</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="bg-red-100 rounded-full p-2 mr-4 flex-shrink-0">
+                                    <i class="fas fa-exclamation-triangle text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-red-800">Lighting & Weather</h4>
+                                    <p class="text-gray-600">Sudden changes in lighting conditions or weather within a single scene</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <img src="https://assets.videomaker.com/2012/09/PiratesMistake.jpg" alt="Movie Continuity Error Example" class="rounded-lg shadow-lg continuity-error">
+                        <p class="text-sm text-gray-600 text-center">Example of a continuity error - notice the inconsistencies between shots</p>
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-3">The Script Supervisor's Solution</h4>
+                            <p class="text-green-700">By meticulously tracking every detail and taking reference photos, script supervisors ensure these errors never make it to the final cut, maintaining the story's credibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- On-Set Tools and Techniques -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">On-Set Tools and Techniques</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">The Lined Script</h3>
+                        <p class="text-lg mb-4">The script supervisor's most important tool is the lined script - a marked-up version of the screenplay that tracks every shot taken.</p>
+                        <div class="lined-script bg-white p-6 rounded-lg shadow-lg">
+                            <h4 class="font-semibold mb-4">How Script Lining Works:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="bg-green-500 w-4 h-1 mt-2 mr-3 flex-shrink-0"></span>
+                                    <span><strong>Vertical lines</strong> mark which dialogue/action was covered in each shot</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="bg-blue-500 w-4 h-1 mt-2 mr-3 flex-shrink-0"></span>
+                                    <span><strong>Different colors</strong> represent different camera angles or setups</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="bg-red-500 w-4 h-1 mt-2 mr-3 flex-shrink-0"></span>
+                                    <span><strong>Squiggly lines</strong> indicate partial coverage or interrupted takes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://cdn.scriptation.com/wp-content/uploads/2021/07/Scriptation-PDF-Paperless-Script-App-Film-TV_Images-Tramlines-1.webp" alt="Lined Script Example" class="rounded-lg shadow-lg w-full mb-4">
+                        <p class="text-sm text-gray-600 text-center">Example of a properly lined script showing shot coverage</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-semibold mb-3 flex items-center">
+                            <i class="fas fa-camera mr-2 text-blue-600"></i>
+                            Camera Log
+                        </h4>
+                        <img src="https://images.squarespace-cdn.com/content/v1/55aeab62e4b0485b4e8ab594/1530029132826-SMZ9OW9XEZVIM5SE3VNI/Script+Continuity+Sheet+Example.png" alt="Script Continuity Sheet" class="rounded mb-3 w-full">
+                        <p class="text-sm text-gray-600">Detailed logs of each shot including camera settings, lens, and technical notes</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-semibold mb-3 flex items-center">
+                            <i class="fas fa-clock mr-2 text-green-600"></i>
+                            Timing Sheets
+                        </h4>
+                        <img src="https://images.squarespace-cdn.com/content/v1/61e8a17cae68793e9fa20bb5/033defd0-8ec7-4919-8d1f-64357c630047/Top+sheet.png" alt="Timing Sheet" class="rounded mb-3 w-full">
+                        <p class="text-sm text-gray-600">Track scene lengths and cumulative runtime for editing and post-production</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-semibold mb-3 flex items-center">
+                            <i class="fas fa-list mr-2 text-purple-600"></i>
+                            Daily Reports
+                        </h4>
+                        <img src="https://www.nostairway.com/nsm/wp-content/uploads/2022/03/editors-log-.jpeg" alt="Editor's Log" class="rounded mb-3 w-full">
+                        <p class="text-sm text-gray-600">Comprehensive reports sent to editors with shot descriptions and notes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples of Continuity in Action -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Examples of Continuity in Action</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Real-World Scenario: Restaurant Scene</h3>
+                    <p class="mb-4">Imagine filming a dinner conversation between two characters. The scene might be shot over several hours with multiple camera angles:</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-4">
+                        <h4 class="text-lg font-semibold">What the Script Supervisor Tracks:</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-utensils text-orange-500 mt-1 mr-3"></i>
+                                <span>Position of utensils, glasses, and food on the table</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-tshirt text-blue-500 mt-1 mr-3"></i>
+                                <span>Actor's clothing, jewelry, and hair positioning</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-hand-paper text-green-500 mt-1 mr-3"></i>
+                                <span>Hand positions and gestures between cuts</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-comments text-purple-500 mt-1 mr-3"></i>
+                                <span>Dialogue timing and actor's eye lines</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <h4 class="font-semibold mb-3">Script Supervisor's Notes:</h4>
+                            <div class="font-mono text-sm space-y-2 text-gray-700">
+                                <p>Scene 47A - RESTAURANT INT. DAY</p>
+                                <p>Take 1: Wine glass 1/2 full, left hand</p>
+                                <p>Take 2: Glass same position</p>
+                                <p>Take 3: Actor picked up glass at "I think"</p>
+                                <p>Take 4: GOOD - glass down after "really"</p>
+                                <p>Continuity: Napkin folded throughout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Beginner Tutorials -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Best Beginner Tutorials</h2>
+            <div class="max-w-6xl mx-auto space-y-8">
+                
+                <!-- Video 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/NAvn7CNpdB8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-6">
+                            <h3 class="text-xl font-semibold mb-3">What Happens When A Movie Has No Script Supervisor?</h3>
+                            <p class="text-gray-600 mb-4">Vanity Fair's excellent breakdown featuring Martin Scorsese's long-time script supervisor Martha Pinson. Shows real examples of how continuity works in major films.</p>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <i class="fas fa-play-circle mr-2"></i>
+                                <span>3M+ views • 7:05 • Vanity Fair</span>
+                            </div>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <strong>Why watch:</strong> Perfect introduction showing real Hollywood examples and professional techniques
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/rcgVhfBxKY4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-6">
+                            <h3 class="text-xl font-semibold mb-3">What does a Script Supervisor do?</h3>
+                            <p class="text-gray-600 mb-4">Comprehensive 17-minute tutorial by Beyond Film School covering all aspects of the script supervisor role, from pre-production to post.</p>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <i class="fas fa-play-circle mr-2"></i>
+                                <span>35K+ views • 17:24 • Beyond Film School</span>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded">
+                                <strong>Why watch:</strong> In-depth explanation of responsibilities and day-to-day duties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/n1HOiaikLJw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-6">
+                            <h3 class="text-xl font-semibold mb-3">How To Make A Lined Script</h3>
+                            <p class="text-gray-600 mb-4">Practical tutorial showing exactly how to create and use lined scripts - the script supervisor's most important tool.</p>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <i class="fas fa-play-circle mr-2"></i>
+                                <span>45K+ views • 2:35 • Film It Yourself</span>
+                            </div>
+                            <div class="bg-purple-50 p-3 rounded">
+                                <strong>Why watch:</strong> Hands-on tutorial perfect for beginners wanting to practice script lining
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Practice Worksheet -->
+    <section class="py-12 worksheet-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Practice Worksheet: Script Supervisor Skills</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-6">Exercise 1: Spot the Continuity Errors</h3>
+                    <p class="mb-6">Study the images below and identify potential continuity issues a script supervisor would need to track:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="border-2 border-dashed border-gray-300 p-4 rounded-lg">
+                            <img src="https://fugitives.com/wp-content/uploads/2022/06/ezgif-1-8c21b7140c.jpg" alt="Continuity Error Example" class="rounded w-full mb-3">
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Prop positioning changes
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Costume inconsistencies
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Lighting differences
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Actor positioning
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold mb-4">Practice Notes Section:</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Scene/Take Number:</label>
+                                    <input type="text" class="w-full p-2 border rounded" placeholder="e.g., Scene 15A, Take 3">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Continuity Notes:</label>
+                                    <textarea class="w-full p-2 border rounded h-20" placeholder="Describe what you observed..."></textarea>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1">Action to Take:</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>Select action...</option>
+                                        <option>Reshoot required</option>
+                                        <option>Note for post-production</option>
+                                        <option>Acceptable variance</option>
+                                        <option>Discuss with director</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mb-6">Exercise 2: Create a Script Line</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold mb-4">Sample Script Excerpt:</h4>
+                        <div class="font-mono text-sm bg-white p-4 rounded border-l-4 border-blue-500">
+                            <p class="mb-2"><strong>SARAH</strong></p>
+                            <p class="mb-2">I can't believe you're leaving tomorrow.</p>
+                            <p class="mb-2"><strong>MIKE</strong></p>
+                            <p class="mb-2">It's not forever. I'll be back for Christmas.</p>
+                            <p class="mb-2"><strong>SARAH</strong></p>
+                            <p>That's six months away!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold mb-3">Mark Your Coverage:</h4>
+                            <p class="text-sm text-gray-600 mb-4">Draw lines next to the text to indicate which shots cover which dialogue:</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Master shot (wide)
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Sarah's close-up
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Mike's close-up
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2"> Two-shot (medium)
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-3">Shot Timing:</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <span class="w-24 text-sm">Take 1:</span>
+                                    <input type="text" class="flex-1 p-2 border rounded ml-2" placeholder="Duration">
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="w-24 text-sm">Take 2:</span>
+                                    <input type="text" class="flex-1 p-2 border rounded ml-2" placeholder="Duration">
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="w-24 text-sm">Take 3:</span>
+                                    <input type="text" class="flex-1 p-2 border rounded ml-2" placeholder="Duration">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources and Next Steps -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center">Additional Resources & Next Steps</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">
+                            <i class="fas fa-download mr-2"></i>
+                            Downloadable Templates
+                        </h3>
+                        <ul class="space-y-2 text-blue-700">
+                            <li><a href="https://images.squarespace-cdn.com/content/v1/55aeab62e4b0485b4e8ab594/1530029020006-7SU1TJ3G2V7JPSHX9ZIP/Script+Continuity+Sheet+blank.png" class="hover:underline" target="_blank">• Blank Script Continuity Sheet</a></li>
+                            <li><a href="https://infocusfilmschool.com/script-supervisor-film-industry-jobs/" class="hover:underline" target="_blank">• InFocus Film School Resources</a></li>
+                            <li><a href="https://pixelvalleystudio.com/pmf-articles/script-continuity-sheet-and-other-important-film-production-notes" class="hover:underline" target="_blank">• Production Notes Templates</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-green-800">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Further Learning
+                        </h3>
+                        <ul class="space-y-2 text-green-700">
+                            <li>• Practice with short films or student projects</li>
+                            <li>• Shadow experienced script supervisors</li>
+                            <li>• Study behind-the-scenes footage</li>
+                            <li>• Join filmmaking communities online</li>
+                            <li>• Consider specialized script supervising courses</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Ready to Start Your Journey?</h3>
+                    <p class="text-lg mb-6">Script supervising is a detail-oriented role that requires patience, organization, and a keen eye. It's perfect for those who love ensuring quality and precision in filmmaking.</p>
+                    <div class="flex justify-center space-x-4 text-sm">
+                        <span class="bg-white px-4 py-2 rounded-full shadow">🎬 Essential Role</span>
+                        <span class="bg-white px-4 py-2 rounded-full shadow">👁️ Detail-Oriented</span>
+                        <span class="bg-white px-4 py-2 rounded-full shadow">🚀 Great Entry Point</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p class="mb-4">Created for aspiring filmmakers learning the art of script supervision</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <span><i class="fas fa-film mr-2"></i>Film Education</span>
+                <span><i class="fas fa-users mr-2"></i>Beginner Friendly</span>
+                <span><i class="fas fa-tools mr-2"></i>Practical Learning</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interaction for the worksheet
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for better UX
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add some interactivity to checkboxes
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        this.parentElement.classList.add('text-green-600', 'font-medium');
+                    } else {
+                        this.parentElement.classList.remove('text-green-600', 'font-medium');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!https://zckumiyy.gensparkspace.com/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Vision: Concept Artists in Film Production</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .section-gradient {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .interactive-card:hover {
+            transform: scale(1.02);
+        }
+        .concept-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+            transform: translateX(-50%);
+        }
+        .timeline-item:nth-child(odd) {
+            text-align: right;
+            padding-right: 2rem;
+        }
+        .timeline-item:nth-child(even) {
+            text-align: left;
+            padding-left: 2rem;
+        }
+        .skill-bar {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 8px;
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .mood-board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            grid-auto-rows: 200px;
+        }
+        .mood-board-item {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .mood-board-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .toggle-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .toggle-content.active {
+            max-height: 1000px;
+        }
+        .worksheet-section {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">The Art of Vision</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Discover the Creative World of Film Concept Artists</p>
+            <div class="flex justify-center items-center space-x-4 mb-8">
+                <i class="fas fa-palette text-3xl"></i>
+                <i class="fas fa-film text-3xl"></i>
+                <i class="fas fa-magic text-3xl"></i>
+            </div>
+            <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+                Every great film begins with a vision. Before the cameras roll, before the sets are built, before the actors step into character, there's a magical moment when imagination meets paper. This is where Concept Artists work their magic, transforming abstract ideas into visual realities that shape the entire look and feel of cinema.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Does a Concept Artist Do?</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Concept Artists are the visual storytellers who bridge the gap between imagination and reality in film production. They create the first visual interpretations of a director's vision, turning words and ideas into compelling artwork that guides the entire production team.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="interactive-card bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-lg border border-gray-200">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-lightbulb text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Visual Exploration</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Concept Artists explore multiple visual possibilities for characters, environments, and props before production begins. They experiment with different styles, moods, and approaches to find the perfect visual language for each project.
+                    </p>
+                </div>
+
+                <div class="interactive-card bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-lg border border-gray-200">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-users text-4xl text-green-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Collaborative Design</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        They work closely with Production Designers, Art Directors, and Directors to ensure visual consistency. Their artwork serves as a communication tool that helps align the entire team's vision.
+                    </p>
+                </div>
+
+                <div class="interactive-card bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg border border-gray-200">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-rocket text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Early Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        By creating detailed visual concepts early in pre-production, they help prevent costly changes later. Their work influences everything from set construction to costume design to visual effects.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Responsibilities -->
+            <div class="bg-gray-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Core Responsibilities</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-images text-blue-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Mood Boards</h4>
+                        <p class="text-sm text-gray-600">Creating visual tone and atmosphere references</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-paint-brush text-green-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Keyframes</h4>
+                        <p class="text-sm text-gray-600">Illustrating crucial story moments and compositions</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-dragon text-purple-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Creature Design</h4>
+                        <p class="text-sm text-gray-600">Developing unique characters and fantasy beings</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-mountain text-orange-600"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Environment Design</h4>
+                        <p class="text-sm text-gray-600">Crafting immersive worlds and settings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- From Imagination to Sketch Section -->
+    <section class="py-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">From Imagination to Sketch</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    The concept art process is a journey of discovery, where abstract ideas evolve into concrete visual solutions through sketching, iteration, and creative problem-solving.
+                </p>
+            </div>
+
+            <!-- Process Timeline -->
+            <div class="relative concept-timeline max-w-4xl mx-auto mb-16">
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover max-w-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</div>
+                            <h3 class="text-xl font-semibold">Script Analysis</h3>
+                        </div>
+                        <p class="text-gray-600">Reading and understanding the story, identifying key visual elements, moods, and themes that need visual representation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover max-w-md ml-auto">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</div>
+                            <h3 class="text-xl font-semibold">Research & References</h3>
+                        </div>
+                        <p class="text-gray-600">Gathering visual references, studying real-world inspiration, and building a visual library for the project.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover max-w-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</div>
+                            <h3 class="text-xl font-semibold">Thumbnail Sketches</h3>
+                        </div>
+                        <p class="text-gray-600">Creating quick, rough sketches to explore different composition and design ideas rapidly.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover max-w-md ml-auto">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</div>
+                            <h3 class="text-xl font-semibold">Detailed Development</h3>
+                        </div>
+                        <p class="text-gray-600">Refining the best concepts into detailed artwork with proper lighting, color, and composition.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover max-w-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</div>
+                            <h3 class="text-xl font-semibold">Final Presentation</h3>
+                        </div>
+                        <p class="text-gray-600">Presenting polished concept art to the production team for approval and implementation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Examples Grid -->
+            <div class="mood-board-grid mb-12">
+                <div class="mood-board-item">
+                    <img src="https://blog.wingfox.com/wp-content/uploads/2022/01/keyframe-design-1024x573.jpg" alt="Keyframe Design Example" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-semibold">Keyframe Design</p>
+                    </div>
+                </div>
+                <div class="mood-board-item">
+                    <img src="https://www.clipstudio.net/wp-content/uploads/2019/09/0034_001-1.jpg" alt="Hollywood Concept Art Process" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-semibold">Environment Concept</p>
+                    </div>
+                </div>
+                <div class="mood-board-item">
+                    <img src="https://cdn.80.lv/api/upload/content/1e/5fd33b52a8020.jpg" alt="Fast-Paced Film Industry Concept Art" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-semibold">Character Development</p>
+                    </div>
+                </div>
+                <div class="mood-board-item">
+                    <img src="https://i.pinimg.com/736x/3d/7b/08/3d7b0817b6c1847ca87c7db76a6db3b9.jpg" alt="Character Design Sheet" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-semibold">Character Sheet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Supporting the Art Department -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Supporting the Art Department</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Concept Artists don't work in isolation. They're integral members of the art department, collaborating with various professionals to bring cohesive visual storytelling to life.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Key Collaborations</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="interactive-card bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                            <div class="flex items-start">
+                                <i class="fas fa-user-tie text-blue-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Production Designer</h4>
+                                    <p class="text-gray-600">Works with the Production Designer to establish the overall visual style and ensure all design elements support the story's themes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="interactive-card bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <i class="fas fa-drafting-compass text-green-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Art Director</h4>
+                                    <p class="text-gray-600">Collaborates with Art Directors to translate concept art into practical, buildable designs that fit within budget constraints.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="interactive-card bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                            <div class="flex items-start">
+                                <i class="fas fa-video text-purple-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">VFX Supervisors</h4>
+                                    <p class="text-gray-600">Provides visual targets for VFX teams, helping bridge the gap between practical and digital elements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="interactive-card bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                            <div class="flex items-start">
+                                <i class="fas fa-cut text-orange-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Costume Designers</h4>
+                                    <p class="text-gray-600">Creates character designs that inform costume choices, ensuring visual harmony across all departments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://www.clipstudio.net/wp-content/uploads/2019/09/0034_004-1.jpg" alt="Concept Art Workflow" class="rounded-lg shadow-lg w-full">
+                    <p class="text-center text-gray-600 mt-4 italic">Concept artists work collaboratively to bring visual consistency to film production</p>
+                </div>
+            </div>
+
+            <!-- Workflow Impact -->
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Impact on Production Workflow</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Time Savings</h4>
+                        <p class="text-gray-600">Early visual planning prevents costly revisions during production</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Budget Control</h4>
+                        <p class="text-gray-600">Helps estimate costs and plan resources more effectively</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Clear Communication</h4>
+                        <p class="text-gray-600">Visual references eliminate ambiguity in creative discussions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Video Learning Section -->
+    <section class="py-16 section-gradient">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Learn from the Masters</h2>
+                <p class="text-xl text-white opacity-90 max-w-4xl mx-auto">
+                    Watch professional concept artists at work and gain insights into their creative processes, techniques, and industry workflows.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/gaytoO3tVCE" title="Designing Middle-earth - Lord of the Rings Behind the Scenes" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Designing Middle-earth</h3>
+                        <p class="text-gray-600">Go behind the scenes with legendary concept artists Alan Lee and John Howe as they create the visual world of Middle-earth for the Lord of the Rings trilogy.</p>
+                        <div class="flex items-center mt-4 text-sm text-gray-500">
+                            <i class="fas fa-play-circle mr-2"></i>
+                            <span>41:14 • Behind the Scenes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/CmRxjtjSc1E" title="What does a film concept artist do?" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">What Does a Film Concept Artist Do?</h3>
+                        <p class="text-gray-600">Meet Hollywood concept artist Dean Sherriff and learn about the day-to-day responsibilities and career path of professional concept artists.</p>
+                        <div class="flex items-center mt-4 text-sm text-gray-500">
+                            <i class="fas fa-play-circle mr-2"></i>
+                            <span>2:00 • Career Insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/jaRcYNYPVco" title="Concept Art for Film and TV - An Introduction" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Concept Art for Film and TV - Complete Introduction</h3>
+                    <p class="text-gray-600">A comprehensive introduction to concept art creation for film and television, covering techniques, workflows, and industry practices.</p>
+                    <div class="flex items-center mt-4 text-sm text-gray-500">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        <span>19:17 • Technical Tutorial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Famous Film Examples -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Key Examples from Famous Films</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Explore how concept art has shaped some of cinema's most memorable visual experiences, from fantastical worlds to character designs that have become cultural icons.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1520710677574-NPIYYQFOL6B8H4O4UMSN/ae0eab915ee454bbf72ef8a0e36977b6--monster-concept-art-monsters-ink.jpg" alt="Monsters Inc. Concept Art" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Pixar's Character Evolution</h3>
+                        <p class="text-gray-600 mb-4">See how Pixar's concept artists develop beloved characters like those in Monsters, Inc., exploring different personalities and visual approaches before settling on final designs.</p>
+                        <div class="flex items-center text-blue-600">
+                            <i class="fas fa-palette mr-2"></i>
+                            <span class="font-medium">Character Design • Animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzL20f-qOB0GKq09DlzG6uF2eKJc4eRM0IUhRS_3M0nNcxsVvs4MeLd7i4yKbkl1QlyBrDNAnrEPmczOohXcDgc-zNN5jkOKBRII8ijPRDeSGmpg-ezWAesKq7GQK3Kd1WqLiKSik2YSt0/s1600/Alex-Toader-Predators-0001-Armour_1to5sheetBsmAT.jpg" alt="Predators Concept Art" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Sci-Fi Creature Design</h3>
+                        <p class="text-gray-600 mb-4">Alex Toader's concept art for "Predators" demonstrates how artists explore different armor designs and creature variations to create iconic sci-fi antagonists.</p>
+                        <div class="flex items-center text-green-600">
+                            <i class="fas fa-robot mr-2"></i>
+                            <span class="font-medium">Creature Design • Sci-Fi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Film Examples -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Interactive Film Gallery</h3>
+                <p class="text-center text-gray-600 mb-8">Click on each card to learn more about how concept art shaped these iconic films</p>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="interactive-card bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-lg border border-gray-200" onclick="toggleContent('lotr-content')">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-ring text-3xl text-yellow-600 mb-3"></i>
+                            <h4 class="text-lg font-semibold text-gray-800">Lord of the Rings</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">Fantasy world-building through concept art</p>
+                        <div id="lotr-content" class="toggle-content mt-4">
+                            <div class="border-t pt-4">
+                                <p class="text-sm text-gray-600">Alan Lee and John Howe created thousands of concept drawings that defined Middle-earth's visual language, from the Shire's cozy hobbit holes to the imposing architecture of Minas Tirith.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interactive-card bg-gradient-to-br from-green-50 to-blue-50 p-6 rounded-lg border border-gray-200" onclick="toggleContent('avatar-content')">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-leaf text-3xl text-green-600 mb-3"></i>
+                            <h4 class="text-lg font-semibold text-gray-800">Avatar</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">Alien ecosystem visualization</p>
+                        <div id="avatar-content" class="toggle-content mt-4">
+                            <div class="border-t pt-4">
+                                <p class="text-sm text-gray-600">James Cameron's team created extensive concept art for Pandora's bioluminescent flora and fauna, establishing the visual rules for an entire alien ecosystem before any CGI work began.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interactive-card bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg border border-gray-200" onclick="toggleContent('starwars-content')">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-rocket text-3xl text-purple-600 mb-3"></i>
+                            <h4 class="text-lg font-semibold text-gray-800">Star Wars</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">Iconic character and vehicle design</p>
+                        <div id="starwars-content" class="toggle-content mt-4">
+                            <div class="border-t pt-4">
+                                <p class="text-sm text-gray-600">Ralph McQuarrie's concept paintings for the original trilogy established the visual DNA of Star Wars, from Darth Vader's imposing silhouette to the sleek design of starships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Interactive Worksheet Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="worksheet-section">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-pencil-alt mr-3"></i>
+                        Creative Workshop: Your First Concept Art
+                    </h2>
+                    <p class="text-lg text-gray-700">
+                        Put your learning into practice with these hands-on exercises designed to help you think like a concept artist.
+                    </p>
+                </div>
+
+                <!-- Exercise 1: Mood Board Creation -->
+                <div class="bg-white rounded-lg p-6 mb-8 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</div>
+                        Create a Mini Mood Board
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Choose one of these film genres and create a mood board using colors, textures, and visual references:
+                    </p>
+                    <div class="grid md:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-gray-100 p-4 rounded-lg text-center cursor-pointer hover:bg-gray-200 transition-colors" onclick="selectGenre(this, 'cyberpunk')">
+                            <i class="fas fa-city text-2xl text-blue-500 mb-2"></i>
+                            <p class="font-medium">Cyberpunk Thriller</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center cursor-pointer hover:bg-gray-200 transition-colors" onclick="selectGenre(this, 'fantasy')">
+                            <i class="fas fa-magic text-2xl text-purple-500 mb-2"></i>
+                            <p class="font-medium">Fantasy Adventure</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center cursor-pointer hover:bg-gray-200 transition-colors" onclick="selectGenre(this, 'western')">
+                            <i class="fas fa-hat-cowboy text-2xl text-orange-500 mb-2"></i>
+                            <p class="font-medium">Space Western</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center cursor-pointer hover:bg-gray-200 transition-colors" onclick="selectGenre(this, 'horror')">
+                            <i class="fas fa-ghost text-2xl text-red-500 mb-2"></i>
+                            <p class="font-medium">Gothic Horror</p>
+                        </div>
+                    </div>
+                    <div id="genre-prompt" class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-blue-800 font-medium">Select a genre above to see specific mood board prompts!</p>
+                    </div>
+                </div>
+
+                <!-- Exercise 2: Character Silhouettes -->
+                <div class="bg-white rounded-lg p-6 mb-8 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</div>
+                        Character Silhouette Challenge
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Create three different character silhouettes for this scenario:
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-lg mb-4">
+                        <p class="text-green-800 font-medium">
+                            "A mysterious guardian who protects an ancient library containing the world's lost knowledge."
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="border-2 border-dashed border-gray-300 p-6 rounded-lg text-center min-h-40 flex flex-col justify-center">
+                            <i class="fas fa-user text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-500">Young & Agile</p>
+                            <p class="text-sm text-gray-400">Quick, stealthy approach</p>
+                        </div>
+                        <div class="border-2 border-dashed border-gray-300 p-6 rounded-lg text-center min-h-40 flex flex-col justify-center">
+                            <i class="fas fa-user-ninja text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-500">Wise & Ancient</p>
+                            <p class="text-sm text-gray-400">Magical, ethereal presence</p>
+                        </div>
+                        <div class="border-2 border-dashed border-gray-300 p-6 rounded-lg text-center min-h-40 flex flex-col justify-center">
+                            <i class="fas fa-user-shield text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-500">Strong & Imposing</p>
+                            <p class="text-sm text-gray-400">Warrior-scholar hybrid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exercise 3: Environment Exploration -->
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</div>
+                        Environment Mood Exploration
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Sketch thumbnail concepts for the same location in different moods:
+                    </p>
+                    <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                        <p class="text-purple-800 font-medium">
+                            Location: "An abandoned space station drifting through an asteroid field"
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Peaceful Discovery</h4>
+                            <p class="text-sm text-blue-700">Soft lighting, wonder, hope for finding something valuable</p>
+                        </div>
+                        <div class="bg-red-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">Dangerous Tension</h4>
+                            <p class="text-sm text-red-700">Dark shadows, ominous lighting, sense of lurking threat</p>
+                        </div>
+                        <div class="bg-yellow-100 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-2">Melancholic Beauty</h4>
+                            <p class="text-sm text-yellow-700">Nostalgic atmosphere, faded grandeur, bittersweet mood</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips Section -->
+                <div class="mt-8 bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                        Pro Tips for Beginners
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Start with simple shapes and silhouettes
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Focus on mood and atmosphere over details
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Use reference images for inspiration
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Work quickly and don't overthink
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Create multiple variations of each idea
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-arrow-right text-orange-500 mr-2 mt-1"></i>
+                                    Think about how your art serves the story
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Resources Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Best Beginner Resources & Tutorials</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Continue your concept art journey with these carefully curated resources, from online courses to essential tools and communities.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- Online Learning -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-graduation-cap text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Online Learning</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-play-circle text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <a href="https://www.proko.com" class="text-blue-600 hover:underline font-medium">Proko Character Design</a>
+                                <p class="text-sm text-gray-600">Professional character design fundamentals</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-play-circle text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <a href="https://www.schoolism.com" class="text-blue-600 hover:underline font-medium">Schoolism</a>
+                                <p class="text-sm text-gray-600">Industry-taught concept art courses</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-play-circle text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <a href="#" class="text-blue-600 hover:underline font-medium">Learn Squared</a>
+                                <p class="text-sm text-gray-600">Advanced concept design techniques</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Essential Tools -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-palette text-4xl text-green-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Essential Tools</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-paint-brush text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Photoshop</span>
+                                <p class="text-sm text-gray-600">Industry standard for digital painting</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-paint-brush text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Procreate</span>
+                                <p class="text-sm text-gray-600">Great for iPad sketching and ideation</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-paint-brush text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Blender</span>
+                                <p class="text-sm text-gray-600">Free 3D software for concept modeling</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-paint-brush text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Clip Studio Paint</span>
+                                <p class="text-sm text-gray-600">Excellent for illustration and concept work</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Communities -->
+                <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-users text-4xl text-purple-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800">Artist Communities</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">ArtStation</span>
+                                <p class="text-sm text-gray-600">Professional portfolio platform</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">ConceptArt.org</span>
+                                <p class="text-sm text-gray-600">Long-standing concept art community</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Reddit r/ConceptArt</span>
+                                <p class="text-sm text-gray-600">Active feedback and learning community</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Discord Servers</span>
+                                <p class="text-sm text-gray-600">Real-time art communities and critiques</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skill Development Path -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Your Concept Art Learning Path</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-blue-600 font-bold text-xl">1</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Foundation Skills</h4>
+                        <p class="text-sm text-gray-600">Drawing fundamentals, perspective, composition</p>
+                        <div class="mt-3">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar rounded-full h-2" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-green-600 font-bold text-xl">2</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Digital Tools</h4>
+                        <p class="text-sm text-gray-600">Learn Photoshop, digital painting techniques</p>
+                        <div class="mt-3">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar rounded-full h-2" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-purple-600 font-bold text-xl">3</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Specialized Skills</h4>
+                        <p class="text-sm text-gray-600">Character design, environment art, storytelling</p>
+                        <div class="mt-3">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar rounded-full h-2" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-orange-600 font-bold text-xl">4</span>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Professional Portfolio</h4>
+                        <p class="text-sm text-gray-600">Build industry-ready portfolio, networking</p>
+                        <div class="mt-3">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar rounded-full h-2" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold mb-4">Start Your Creative Journey Today</h3>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    Remember, every master concept artist started with a single sketch. The most important step is to begin creating, experimenting, and sharing your work with the creative community.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="text-center">
+                    <i class="fas fa-pencil-alt text-3xl text-blue-400 mb-3"></i>
+                    <h4 class="font-semibold mb-2">Practice Daily</h4>
+                    <p class="text-sm text-gray-300">Consistent practice builds the visual library and muscle memory essential for concept art</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-eye text-3xl text-green-400 mb-3"></i>
+                    <h4 class="font-semibold mb-2">Study Films</h4>
+                    <p class="text-sm text-gray-300">Analyze how visual elements support storytelling in your favorite movies</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-share-alt text-3xl text-purple-400 mb-3"></i>
+                    <h4 class="font-semibold mb-2">Share & Connect</h4>
+                    <p class="text-sm text-gray-300">Join communities, seek feedback, and learn from other artists' experiences</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-gray-700">
+                <p class="text-gray-400">
+                    © 2024 The Art of Vision: Concept Artists in Film Production. 
+                    <span class="block mt-2">Educational resource for aspiring filmmakers and artists.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive functionality
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            content.classList.toggle('active');
+        }
+
+        function selectGenre(element, genre) {
+            // Remove previous selections
+            document.querySelectorAll('.bg-gray-100').forEach(el => {
+                el.classList.remove('bg-blue-200', 'border-blue-500');
+                el.classList.add('bg-gray-100');
+            });
+            
+            // Highlight selected
+            element.classList.remove('bg-gray-100');
+            element.classList.add('bg-blue-200', 'border-2', 'border-blue-500');
+            
+            // Show genre-specific prompts
+            const prompts = {
+                cyberpunk: "Create a mood board focusing on: Neon colors, urban decay, high-tech elements, rain-soaked streets, metallic textures, and contrast between organic and synthetic elements.",
+                fantasy: "Explore these elements: Earth tones, magical lighting, ancient textures, mystical symbols, natural materials, and the balance between civilization and wilderness.",
+                western: "Consider these aspects: Desert landscapes, worn leather, metallic spacecraft, dual suns, rugged frontiers, and the fusion of old west and space technology.",
+                horror: "Focus on these moods: Deep shadows, muted colors, gothic architecture, decay and age, mysterious fog, and unsettling organic shapes."
+            };
+            
+            document.getElementById('genre-prompt').innerHTML = `
+                <p class="text-blue-800 font-medium mb-2">${genre.charAt(0).toUpperCase() + genre.slice(1)} Mood Board Challenge:</p>
+                <p class="text-blue-700">${prompts[genre]}</p>
+            `;
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.style.width;
+                        }, index * 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+            observer.observe(bar.parentElement.parentElement);
+        });
+
+        // Add hover effects to interactive cards
+        document.querySelectorAll('.interactive-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
